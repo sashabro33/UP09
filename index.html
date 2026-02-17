@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood — здоровая еда каждый день</title>
     <meta name="description" content="Здоровая еда с доставкой на дом. Персонализированный план питания от Omnifood AI. Попробуйте бесплатно!">
-    <meta name="keywords" content="здоровая еда, доставка еды, правильное питание, подписка на еду">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com/">
@@ -18,13 +17,12 @@
     <meta property="twitter:title" content="Omnifood — здоровая еда каждый день">
     <meta property="twitter:description" content="Умная подписка на еду 365 дней в году. Подстраивается под ваши вкусы.">
     <meta property="twitter:image" content="https://example.com/UP09/UP09-master/img/hero.webp">
-    <!-- Favicon (если есть) -->
+    <!-- Favicon -->
     <link rel="icon" href="/UP09/UP09-master/favicon.ico" type="image/x-icon">
     <!-- Предзагрузка основного CSS -->
     <link rel="preload" href="style.css" as="style">
-    <!-- Критический CSS – теперь покрывает весь первый экран -->
+    <!-- Критический CSS (минимум для первого экрана) -->
     <style>
-        /* Критический CSS – все стили для первого экрана (шапка, главный блок, кнопки, аватарки) */
         body {
             margin: 0;
             font-family: 'Rubik', sans-serif;
@@ -143,14 +141,12 @@
             width: 565px;
             height: 570px;
         }
-        /* Остальной CSS будет загружен асинхронно */
     </style>
     <!-- Асинхронная загрузка основного CSS -->
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
-    <!-- Далее идёт весь ваш HTML-код без изменений (такой же, как в предыдущем ответе) -->
     <div class="container">
         <header>
             <div class="logo">
@@ -211,51 +207,56 @@
             </div>
         </section>
 
-        <!-- Секция "Как это работает" -->
+        <!-- Секция "Как это работает" (исправленная) -->
         <section class="section-how" id="how-it-works" aria-labelledby="how-title">
             <div class="container-narrow">
                 <span class="section-tag">КАК ЭТО РАБОТАЕТ</span>
                 <h2 id="how-title" class="section-title">Ваша ежедневная доза здоровья в 3 простых шага</h2>
             </div>
-            <div class="main-container2-main">
-                <div class="main-container2-main_item1">
-                    <!-- Шаг 1 -->
-                    <div class="main-container2-main_item1_1">
-                        <div class="main-container2-main_item1_1_1">01</div>
-                        <div class="main-container2-main_item1_1_2">Расскажите нам, что вам нравится (и что не нравится)</div>
-                        <div class="main-container2-main_item1_1_3">Больше не тратьте время на размышления о том, что есть! Omnifood AI создаст для вас на 100% персонализированный еженедельный план питания. Он гарантирует, что вы получите все необходимые питательные вещества и витамины, независимо от вашей диеты!</div>
+            <div class="how-grid">
+                <!-- Шаг 1 -->
+                <div class="how-row">
+                    <div class="how-text">
+                        <span class="how-number">01</span>
+                        <h3 class="how-heading">Расскажите нам, что вам нравится (и что не нравится)</h3>
+                        <p class="how-description">Больше не тратьте время на размышления о том, что есть! Omnifood AI создаст для вас на 100% персонализированный еженедельный план питания. Он гарантирует, что вы получите все необходимые питательные вещества и витамины, независимо от вашей диеты!</p>
                     </div>
-                    <!-- Изображение шага 1 (телефон) -->
-                    <div class="main-container2-main_item1_2">
-                        <img src="/UP09/UP09-master/img/app/app-screen-2.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: выбор предпочтений">
-                    </div>
-                    <!-- Шаг 3 -->
-                    <div class="main-container2-main_item1_3">
-                        <div class="main-container2-main_item1_1_1">03</div>
-                        <div class="main-container2-main_item1_1_2">Получайте еду в удобное время</div>
-                        <div class="main-container2-main_item1_1_3">Лучшие повара города будут готовить выбранное вами блюдо каждый день, и мы доставим его к вашей двери в удобное для вас время. Вы можете ежедневно менять график и адрес доставки!</div>
+                    <div class="how-image">
+                        <div class="how-image-inner">
+                            <img src="/UP09/UP09-master/img/app/app-screen-1.webp" width="188" height="379" loading="lazy" alt="Скриншот приложения: выбор предпочтений">
+                        </div>
                     </div>
                 </div>
-                <div class="main-container2-main_item2">
-                    <!-- Изображение шага 2 (телефон) -->
-                    <div class="main-container2-main_item2_1">
-                        <img src="/UP09/UP09-master/img/app/app-screen-1.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: утверждение плана">
+                <!-- Шаг 2 -->
+                <div class="how-row reverse">
+                    <div class="how-text">
+                        <span class="how-number">02</span>
+                        <h3 class="how-heading">Утвердите свой еженедельный план питания</h3>
+                        <p class="how-description">Раз в неделю утверждайте план питания, сгенерированный для вас Omnifood AI. Вы можете менять ингредиенты, заменять целые блюда или даже добавлять свои собственные рецепты.</p>
                     </div>
-                    <!-- Шаг 2 текст -->
-                    <div class="main-container2-main_item2_2">
-                        <div class="main-container2-main_item1_1_1">02</div>
-                        <div class="main-container2-main_item1_1_2">Утвердите свой еженедельный план питания</div>
-                        <div class="main-container2-main_item1_1_3">Раз в неделю утверждайте план питания, сгенерированный для вас Omnifood AI. Вы можете менять ингредиенты, заменять целые блюда или даже добавлять свои собственные рецепты.</div>
+                    <div class="how-image">
+                        <div class="how-image-inner">
+                            <img src="/UP09/UP09-master/img/app/app-screen-2.webp" width="188" height="379" loading="lazy" alt="Скриншот приложения: утверждение плана">
+                        </div>
                     </div>
-                    <!-- Изображение шага 3 (телефон) -->
-                    <div class="main-container2-main_item2_3">
-                        <img src="/UP09/UP09-master/img/app/app-screen-3.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: доставка">
+                </div>
+                <!-- Шаг 3 -->
+                <div class="how-row">
+                    <div class="how-text">
+                        <span class="how-number">03</span>
+                        <h3 class="how-heading">Получайте еду в удобное время</h3>
+                        <p class="how-description">Лучшие повара города будут готовить выбранное вами блюдо каждый день, и мы доставим его к вашей двери в удобное для вас время. Вы можете ежедневно менять график и адрес доставки!</p>
+                    </div>
+                    <div class="how-image">
+                        <div class="how-image-inner">
+                            <img src="/UP09/UP09-master/img/app/app-screen-3.webp" width="188" height="379" loading="lazy" alt="Скриншот приложения: доставка">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Секция "Прием пищи" (карточки) -->
+        <!-- Секция "Прием пищи" (три карточки, включая бургер) -->
         <section class="container-Meals_Section" id="meals" aria-labelledby="meals-title">
             <div class="Meals_Section-top">
                 <div class="Meals_Section-top_item1">ПРИЕМ ПИЩИ</div>
@@ -306,12 +307,12 @@
                             </div>
                             <div class="Meals_Section_main_item-main-spis-item">
                                 <img src="/UP09/UP09-master/img/Img - star outline.webp" width="24" height="24" loading="lazy" alt="">
-                                <span class="text_Meals_Section">4.8 <span class="text_Meals_Section2">рейтинг (537)</span></span>
+                                <span class="text_Meals_Section">4.8 <span class="text_Meals_Section2">рейтинг (441)</span></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Карточка 3 (бургер из галереи) -->
+                <!-- Карточка 3 (бургер) - доп. задание -->
                 <div class="Meals_Section_main_item">
                     <img src="/UP09/UP09-master/img/gallery/gallery-12.webp" width="336" height="224" loading="lazy" class="Meals_Section_main_item_img" alt="Бургер">
                     <div class="Meals_Section_main_item-main">
@@ -357,7 +358,7 @@
             <div class="Meals_Section-bottom"><a href="#" class="Meals_Section-bottom">Посмотреть все рецепты →</a></div>
         </section>
 
-        <!-- Секция отзывов (с оригинальной галереей) -->
+        <!-- Секция отзывов (с галереей) -->
         <section class="section-testimonials" id="testimonials" aria-labelledby="testimonials-title">
             <div class="testimonials-left">
                 <span class="section-tag">ОТЗЫВЫ</span>
@@ -369,14 +370,14 @@
                         <figcaption>— Dave Bryson</figcaption>
                     </figure>
                     <figure class="testimonial">
-                        <img src="/UP09/UP09-master/img/customers/ben.webp" width="64" height="64" loading="lazy" alt="Фото Бена Хадли">
-                        <blockquote>Алгоритм искусственного интеллекта просто потрясающий, он каждый раз выбирает для меня правильные блюда. Удивительно, что больше не нужно беспокоиться о еде!</blockquote>
-                        <figcaption>— Ben Hadley</figcaption>
-                    </figure>
-                    <figure class="testimonial">
                         <img src="/UP09/UP09-master/img/customers/steve.webp" width="64" height="64" loading="lazy" alt="Фото Стива Миллера">
                         <blockquote>Omnifood — просто спасение! Я только что открыла компанию, поэтому у меня совсем нет времени на готовку. Теперь я не могу жить без ежедневного питания!</blockquote>
                         <figcaption>— Steve Miller</figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <img src="/UP09/UP09-master/img/customers/ben.webp" width="64" height="64" loading="lazy" alt="Фото Бена Хадли">
+                        <blockquote>Алгоритм искусственного интеллекта просто потрясающий, он каждый раз выбирает для меня правильные блюда. Удивительно, что больше не нужно беспокоиться о еде!</blockquote>
+                        <figcaption>— Ben Hadley</figcaption>
                     </figure>
                     <figure class="testimonial">
                         <img src="/UP09/UP09-master/img/customers/hannah.webp" width="64" height="64" loading="lazy" alt="Фото Ханны Смит">
@@ -385,7 +386,6 @@
                     </figure>
                 </div>
             </div>
-            <!-- Оригинальная галерея -->
             <div class="Testimonials_Section-cont-right">
                 <div class="Testimonials_Section-cont-right-row">
                     <div class="img1"><img src="/UP09/UP09-master/img/gallery/gallery-1.webp" width="267" height="267" loading="lazy" class="Testimonials_Section-cont-right-row-img" alt="gallery-1"></div>
@@ -410,7 +410,7 @@
             </div>
         </section>
 
-        <!-- Секция цен -->
+        <!-- Секция цен (с бейджем BEST VALUE) -->
         <section class="section-pricing" id="pricing" aria-labelledby="pricing-title">
             <div class="container-narrow">
                 <span class="section-tag">ЦЕНЫ</span>
@@ -432,7 +432,7 @@
                     <a href="#cta" class="btn-primary btn-block">Начните правильно питаться</a>
                 </div>
                 <div class="Pricing_Section-main-block2 complete">
-                    <span class="best-value-badge">BEST VALUE</span>
+                    <span class="best-value-badge">BEST VALUE</span>   <!-- Бейдж возвращён по требованию -->
                     <div class="card-header">
                         <span class="plan-name">COMPLETE</span>
                         <div class="price"><span class="currency">₽</span>6490</div>
@@ -442,7 +442,7 @@
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> <strong>2 приема пищи</strong> в день</li>
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Заказ <strong>24/7</strong></li>
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Доставка бесплатная</li>
-                        <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Получите доступ к новейшим рецептам</li>
+                        <!-- Четвёртый пункт удалён -->
                     </ul>
                     <a href="#cta" class="btn-primary btn-block">Начните правильно питаться</a>
                 </div>
@@ -546,7 +546,7 @@
                 <div class="footer-col">
                     <h4>Ресурсы</h4>
                     <ul>
-                        <li><a href="#">Сборка рецептов</a></li>
+                        <li><a href="#">Сборник рецептов</a></li>
                         <li><a href="#">Служба поддержки</a></li>
                         <li><a href="#">Политика конфиденциальности и условия использования</a></li>
                     </ul>

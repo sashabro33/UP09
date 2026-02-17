@@ -246,94 +246,75 @@ h1 {
     filter: none;
 }
 
-/* Секция "Как это работает" (оригинальные классы) */
-.main-container2-main {
+/* Секция "Как это работает" (новая версия) */
+.how-grid {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0 32px;
-}
-
-.main-container2-main_item1,
-.main-container2-main_item2 {
-    width: 536px;
-}
-
-.main-container2-main_item1 {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 64px;
 }
 
-.main-container2-main_item2 {
+.how-row {
     display: flex;
-    flex-direction: column;
-    gap: 48px;
+    align-items: center;
+    gap: 64px;
 }
 
-.main-container2-main_item1_1,
-.main-container2-main_item1_3,
-.main-container2-main_item2_2 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.how-row.reverse {
+    flex-direction: row-reverse;
 }
 
-.main-container2-main_item1_1_1,
-.main-container2-main_item2_2 .main-container2-main_item1_1_1 {
+.how-text {
+    flex: 1;
+}
+
+.how-number {
+    display: block;
     font-weight: 600;
     font-size: 86px;
     line-height: 1;
     color: #ddd;
+    margin-bottom: 16px;
 }
 
-.main-container2-main_item1_1_2,
-.main-container2-main_item2_2 .main-container2-main_item1_1_2 {
+.how-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2;
     letter-spacing: -0.5px;
     color: var(--text-dark);
+    margin-bottom: 24px;
 }
 
-.main-container2-main_item1_1_3,
-.main-container2-main_item2_2 .main-container2-main_item1_1_3 {
+.how-description {
     font-size: 18px;
     line-height: 1.8;
     color: var(--text-light);
 }
 
-/* Контейнеры для изображений телефонов */
-.main-container2-main_item1_2,
-.main-container2-main_item2_1,
-.main-container2-main_item2_3 {
-    position: relative;
-    width: 536px;
-    height: 379.41px;
+.how-image {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
-.main-container2-main_item1_2_1 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.how-image-inner {
     position: relative;
-    z-index: 2;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Круги (псевдоэлементы) */
-.main-container2-main_item1_2::before,
-.main-container2-main_item2_1::before,
-.main-container2-main_item2_3::before {
+.how-image-inner::before {
     content: '';
     position: absolute;
-    width: 321.58px;
-    height: 321.58px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background-color: var(--primary-light);
     z-index: 0;
@@ -342,13 +323,11 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.main-container2-main_item1_2::after,
-.main-container2-main_item2_1::after,
-.main-container2-main_item2_3::after {
+.how-image-inner::after {
     content: '';
     position: absolute;
-    width: 241.19px;
-    height: 241.19px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     background-color: #FAE5D3;
     z-index: 1;
@@ -357,7 +336,16 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-/* Секция "Прием пищи" (оригинальные классы) */
+.how-image-inner img {
+    position: relative;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 380px;
+}
+
+/* Секция "Прием пищи" */
 .container-Meals_Section {
     display: flex;
     flex-direction: column;
@@ -491,7 +479,6 @@ h1 {
     color: var(--text-light);
 }
 
-/* Блок со списком диет */
 .Meals_Section_main_item2 {
     width: 336px;
     padding: 32px 24px;
@@ -544,7 +531,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* Секция отзывов (с оригинальной галереей) */
+/* Секция отзывов */
 .section-testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -589,11 +576,6 @@ h1 {
     color: var(--text-muted);
 }
 
-.testimonials-right {
-    max-width: 600px;
-}
-
-/* Оригинальная галерея */
 .Testimonials_Section-cont-right {
     display: flex;
     flex-direction: column;
@@ -946,47 +928,95 @@ address a:hover {
     color: var(--primary);
 }
 
-/* Адаптивность */
-@media (max-width: 1400px) {
-    .Meals_Section_main {
-        max-width: 1200px;
+/* ========== АДАПТИВНОСТЬ ========== */
+
+/* 1440px */
+@media (max-width: 1440px) {
+    .main-container {
+        max-width: 1100px;
+        gap: 60px;
     }
-    .main-container2-main {
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
+    h1 {
+        font-size: 48px;
+    }
+    .hero-text {
+        font-size: 18px;
+    }
+    .hero-img {
+        width: 500px;
+        height: auto;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .how-grid {
+        max-width: 1100px;
+    }
+    .how-number {
+        font-size: 72px;
+    }
+    .how-heading {
+        font-size: 28px;
+    }
+    .Testimonials_Section-cont-right {
+        width: 700px;
+    }
+    .Testimonials_Section-cont-right-row-img {
+        max-width: 220px;
     }
 }
 
+/* 1024px (и планшеты до 1200px) */
 @media (max-width: 1200px) {
     .main-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-    .testimonials-grid {
-        grid-template-columns: 1fr;
+    .hero-img {
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .customers {
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .how-row {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 32px;
+    }
+    .how-image-inner {
+        max-width: 240px;
+    }
+    .how-number {
+        font-size: 64px;
+    }
+    .how-heading {
+        font-size: 26px;
+    }
+    .Meals_Section_main {
+        max-width: 900px;
+    }
+    .Meals_Section_main_item,
+    .Meals_Section_main_item2 {
+        width: 300px;
     }
     .section-testimonials {
         grid-template-columns: 1fr;
-    }
-    .Pricing_Section-main {
-        flex-direction: column;
-        align-items: center;
-    }
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
         text-align: center;
     }
-    .free-eat {
-        flex-direction: column;
-    }
-    .eating-img {
+    .testimonials-left {
         max-width: 100%;
-        height: auto;
+        justify-self: center;
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
     }
     .Testimonials_Section-cont-right {
         width: 100%;
@@ -997,36 +1027,268 @@ address a:hover {
         justify-content: center;
     }
     .img1 {
-        min-width: 200px;
+        min-width: 180px;
         flex: 0 1 auto;
+    }
+    .Pricing_Section-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .Pricing_Section-main-block,
+    .Pricing_Section-main-block2 {
+        width: 100%;
+        max-width: 450px;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .free-eat {
+        flex-direction: column;
+    }
+    .eating-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+    }
+    .footer-col {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
+/* 768px */
 @media (max-width: 768px) {
-    .Meals_Section-top_item2 {
+    header {
+        padding: 0 24px;
+    }
+    .header-right {
+        gap: 20px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    .customers {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .section-title {
         font-size: 32px;
+    }
+    .how-number {
+        font-size: 56px;
+    }
+    .how-heading {
+        font-size: 24px;
+    }
+    .how-description {
+        font-size: 16px;
+    }
+    .Meals_Section_main {
+        gap: 24px;
     }
     .Meals_Section_main_item,
     .Meals_Section_main_item2 {
         width: 100%;
         max-width: 400px;
     }
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .Testimonials_Section-cont-right {
+        display: none; /* скрываем галерею на планшетах */
+    }
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .free-eat-left {
+        padding: 32px 24px;
+    }
+    .free-eat-left h2 {
+        font-size: 36px;
     }
     .free-eat-left-form {
         flex-direction: column;
+        gap: 16px;
+    }
+    .free-eat-left-form-column,
+    .free-eat-left-form-column2 {
+        width: 100%;
     }
     .free-eat-left-form-column-button {
         width: 100%;
     }
+    .eating-img {
+        display: none; /* скрываем фото на планшетах */
+    }
+    footer {
+        padding: 64px 24px;
+    }
+}
+
+/* 390px (мобильные) */
+@media (max-width: 390px) {
     header {
         flex-direction: column;
         height: auto;
         padding: 16px;
+        gap: 16px;
     }
     .header-right {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none; /* скрываем навигацию на мобильных */
+    }
+    main {
+        padding: 32px 16px 64px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .hero-text {
+        font-size: 15px;
+    }
+    .button-group {
+        margin-bottom: 32px;
+    }
+    .stats {
+        font-size: 16px;
+        text-align: center;
+    }
+    .hero-img {
+        display: none; /* скрываем hero изображение на мобильных */
+    }
+    .section-mention {
+        padding: 32px 16px;
+    }
+    .mention-bottom {
+        gap: 24px;
+    }
+    .mention-bottom img {
+        max-width: 120px;
+        height: auto;
+    }
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    .how-grid {
+        gap: 48px;
+        padding: 0 16px;
+    }
+    .how-number {
+        font-size: 48px;
+    }
+    .how-heading {
+        font-size: 22px;
+    }
+    .how-description {
+        font-size: 15px;
+    }
+    .how-image-inner {
+        max-width: 200px;
+    }
+    .how-image-inner::before {
+        width: 200px;
+        height: 200px;
+    }
+    .how-image-inner::after {
+        width: 150px;
+        height: 150px;
+    }
+    .container-Meals_Section {
+        padding: 0 16px;
+        gap: 48px;
+    }
+    .Meals_Section-top_item2 {
+        font-size: 28px;
+    }
+    .Meals_Section_main_item-main {
+        padding: 24px 16px 32px;
+    }
+    .Meals_Section_main_item-main-H-japan {
+        font-size: 22px;
+    }
+    .Meals_Section_main_item-main-spis-item {
+        font-size: 16px;
+    }
+    .Meals_Section_main_item2_top {
+        font-size: 24px;
+    }
+    .Meals_Section_main_item2_spis li {
+        font-size: 16px;
+    }
+    .section-testimonials {
+        padding: 64px 16px;
+    }
+    .testimonial blockquote {
+        font-size: 16px;
+    }
+    .Pricing_Section-main-block,
+    .Pricing_Section-main-block2 {
+        padding: 32px 20px;
+    }
+    .price {
+        font-size: 48px;
+    }
+    .currency {
+        font-size: 24px;
+    }
+    .features li {
+        font-size: 16px;
+    }
+    .feature h3 {
+        font-size: 20px;
+    }
+    .feature p {
+        font-size: 16px;
+    }
+    .free-eat-left {
+        padding: 24px 16px;
+    }
+    .free-eat-left h2 {
+        font-size: 28px;
+    }
+    .free-eat-left p {
+        font-size: 16px;
+    }
+    .free-eat-left-form-column-name_mail input,
+    .free-eat-left-form-column-item2 input {
+        font-size: 14px;
+    }
+    .free-eat-left-form-column-button {
+        font-size: 18px;
+    }
+    footer {
+        padding: 48px 16px;
+    }
+    .footer-col h4 {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .footer-col a {
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 12px;
     }
 }

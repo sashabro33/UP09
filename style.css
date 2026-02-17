@@ -1116,7 +1116,7 @@ address a:hover {
         grid-template-columns: 1fr;
     }
     .Testimonials_Section-cont-right {
-        display: none; /* скрываем галерею на планшетах */
+        display: none; 
     }
     .features-grid {
         grid-template-columns: 1fr;
@@ -1140,7 +1140,7 @@ address a:hover {
         width: 100%;
     }
     .eating-img {
-        display: none; /* скрываем фото на планшетах */
+        display: none; 
     }
     footer {
         padding: 64px 24px;
@@ -1156,7 +1156,7 @@ address a:hover {
         gap: 16px;
     }
     .header-right {
-        display: none; /* скрываем навигацию на мобильных */
+        display: none; /
     }
     main {
         padding: 32px 16px 64px;
@@ -1175,7 +1175,7 @@ address a:hover {
         text-align: center;
     }
     .hero-img {
-        display: none; /* скрываем hero изображение на мобильных */
+        display: none; 
     }
     .section-mention {
         padding: 32px 16px;

@@ -226,7 +226,6 @@ h1 {
     padding: 48px 32px;
     text-align: center;
 }
-
 .mention-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -235,47 +234,61 @@ h1 {
     gap: 32px 48px;
     margin-top: 24px;
 }
-
 .mention-bottom img {
     opacity: 0.5;
     filter: grayscale(1);
     transition: var(--transition);
 }
-
 .mention-bottom img:hover {
     opacity: 0.8;
     filter: none;
 }
 
-/* Секция "Как это работает" */
-.section-how {
-    padding: 96px 32px;
-    background: var(--white);
-}
-
-.steps-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px 96px;
+/* Секция "Как это работает" (оригинальные классы) */
+.main-container2-main {
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 32px;
 }
 
-.step-item {
+.main-container2-main_item1,
+.main-container2-main_item2 {
+    width: 536px;
+}
+
+.main-container2-main_item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.main-container2-main_item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.main-container2-main_item1_1,
+.main-container2-main_item1_3,
+.main-container2-main_item2_2 {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.step-number {
+.main-container2-main_item1_1_1,
+.main-container2-main_item2_2 .main-container2-main_item1_1_1 {
     font-weight: 600;
     font-size: 86px;
     line-height: 1;
     color: #ddd;
 }
 
-.step-heading {
+.main-container2-main_item1_1_2,
+.main-container2-main_item2_2 .main-container2-main_item1_1_2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2;
@@ -283,52 +296,66 @@ h1 {
     color: var(--text-dark);
 }
 
-.step-text {
+.main-container2-main_item1_1_3,
+.main-container2-main_item2_2 .main-container2-main_item1_1_3 {
     font-size: 18px;
     line-height: 1.8;
     color: var(--text-light);
 }
 
-.step-image {
+/* Контейнеры для изображений телефонов */
+.main-container2-main_item1_2,
+.main-container2-main_item2_1,
+.main-container2-main_item2_3 {
+    position: relative;
+    width: 536px;
+    height: 379.41px;
     display: flex;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.step-image img {
+.main-container2-main_item1_2_1 {
     width: 100%;
-    max-width: 536px;
-    height: auto;
-    border-radius: 12px;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
 }
 
-.step-image::before {
+/* Круги (псевдоэлементы) */
+.main-container2-main_item1_2::before,
+.main-container2-main_item2_1::before,
+.main-container2-main_item2_3::before {
     content: '';
     position: absolute;
-    width: 80%;
-    padding-bottom: 80%;
-    background: var(--primary-light);
+    width: 321.58px;
+    height: 321.58px;
     border-radius: 50%;
-    z-index: -1;
+    background-color: var(--primary-light);
+    z-index: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.step-image::after {
+.main-container2-main_item1_2::after,
+.main-container2-main_item2_1::after,
+.main-container2-main_item2_3::after {
     content: '';
     position: absolute;
-    width: 60%;
-    padding-bottom: 60%;
-    background: #FAE5D3;
+    width: 241.19px;
+    height: 241.19px;
     border-radius: 50%;
-    z-index: -1;
+    background-color: #FAE5D3;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* Секция "Прием пищи" */
+/* Секция "Прием пищи" (оригинальные классы) */
 .container-Meals_Section {
     display: flex;
     flex-direction: column;
@@ -515,7 +542,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* Секция отзывов */
+/* Секция отзывов (с оригинальной галереей) */
 .section-testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -605,12 +632,7 @@ h1 {
 }
 
 /* Секция цен */
-.section-pricing {
-    padding: 96px 32px;
-    background: var(--white);
-}
-
-.pricing-cards {
+.Pricing_Section-main {
     display: flex;
     justify-content: center;
     gap: 48px;
@@ -618,7 +640,8 @@ h1 {
     margin: 0 auto 48px;
 }
 
-.pricing-card {
+.Pricing_Section-main-block,
+.Pricing_Section-main-block2 {
     flex: 1;
     max-width: 400px;
     border-radius: 11px;
@@ -628,7 +651,7 @@ h1 {
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
 
-.pricing-card.complete {
+.Pricing_Section-main-block2 {
     background: var(--primary-light);
     overflow: hidden;
 }
@@ -746,11 +769,7 @@ h1 {
 }
 
 /* Секция CTA */
-.section-cta {
-    padding: 48px 32px 96px;
-}
-
-.cta-box {
+.free-eat {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -760,12 +779,12 @@ h1 {
     overflow: hidden;
 }
 
-.cta-content {
+.free-eat-left {
     flex: 2;
     padding: 48px 64px;
 }
 
-.cta-content h2 {
+.free-eat-left h2 {
     font-weight: 700;
     font-size: 44px;
     line-height: 1.2;
@@ -773,38 +792,44 @@ h1 {
     margin-bottom: 24px;
 }
 
-.cta-content p {
+.free-eat-left p {
     font-size: 18px;
     line-height: 1.8;
     color: #45260A;
     margin-bottom: 32px;
 }
 
-.cta-form {
+.free-eat-left-form {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.free-eat-left-form-column,
+.free-eat-left-form-column2 {
+    flex: 1;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.form-row {
-    display: flex;
-    gap: 24px;
-}
-
-.form-group {
-    flex: 1;
+.free-eat-left-form-column-name_mail,
+.free-eat-left-form-column-item2 {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.form-group label {
+.free-eat-left-form-column-name_mail label,
+.free-eat-left-form-column-item2 label {
     font-weight: 500;
     font-size: 16px;
     color: #45260A;
 }
 
-.form-group input {
+.free-eat-left-form-column-name_mail input,
+.free-eat-left-form-column-item2 input {
     padding: 12px 16px;
     border: none;
     border-radius: 9px;
@@ -812,7 +837,7 @@ h1 {
     background: var(--white);
 }
 
-.btn-submit {
+.free-eat-left-form-column-button {
     background: #45260A;
     color: var(--white);
     padding: 12px 32px;
@@ -822,13 +847,14 @@ h1 {
     cursor: pointer;
     transition: background var(--transition);
     align-self: flex-end;
+    width: 100%;
 }
 
-.btn-submit:hover {
+.free-eat-left-form-column-button:hover {
     background: #2e1a06;
 }
 
-.cta-box img {
+.eating-img {
     flex: 1;
     object-fit: cover;
     width: 100%;
@@ -922,6 +948,11 @@ address a:hover {
     .Meals_Section_main {
         max-width: 1200px;
     }
+    .main-container2-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -929,16 +960,13 @@ address a:hover {
         flex-direction: column;
         align-items: center;
     }
-    .steps-grid {
-        grid-template-columns: 1fr;
-    }
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
     .section-testimonials {
         grid-template-columns: 1fr;
     }
-    .pricing-cards {
+    .Pricing_Section-main {
         flex-direction: column;
         align-items: center;
     }
@@ -950,10 +978,10 @@ address a:hover {
         align-items: center;
         text-align: center;
     }
-    .cta-box {
+    .free-eat {
         flex-direction: column;
     }
-    .cta-box img {
+    .eating-img {
         max-width: 100%;
         height: auto;
     }
@@ -983,10 +1011,10 @@ address a:hover {
     .features-grid {
         grid-template-columns: 1fr;
     }
-    .form-row {
+    .free-eat-left-form {
         flex-direction: column;
     }
-    .btn-submit {
+    .free-eat-left-form-column-button {
         width: 100%;
     }
     header {

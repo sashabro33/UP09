@@ -125,6 +125,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    max-width: 1920px;
     padding: 0 48px;
     background: var(--white);
 }
@@ -150,6 +151,7 @@ header {
 /* Главная секция */
 main {
     background: var(--primary-light);
+    max-width: 1920px;
     padding: 48px 32px 96px;
 }
 
@@ -863,6 +865,7 @@ h1 {
 
 /* Подвал */
 footer {
+    max-width: 1920px;
     background: var(--white);
     padding: 128px 32px;
     border-top: 1px solid #eee;

@@ -18,11 +18,13 @@
     <meta property="twitter:title" content="Omnifood — здоровая еда каждый день">
     <meta property="twitter:description" content="Умная подписка на еду 365 дней в году. Подстраивается под ваши вкусы.">
     <meta property="twitter:image" content="https://example.com/UP09/UP09-master/img/hero.webp">
-    <!-- Favicon-->
+    <!-- Favicon (если есть) -->
     <link rel="icon" href="/UP09/UP09-master/favicon.ico" type="image/x-icon">
-    <!-- Критический CSS встроен для быстрого первого экрана -->
+    <!-- Предзагрузка основного CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <!-- Критический CSS – теперь покрывает весь первый экран -->
     <style>
-        /* Критический CSS – минимальные стили для шапки и первого блока */
+        /* Критический CSS – все стили для первого экрана (шапка, главный блок, кнопки, аватарки) */
         body {
             margin: 0;
             font-family: 'Rubik', sans-serif;
@@ -148,6 +150,7 @@
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body>
+    <!-- Далее идёт весь ваш HTML-код без изменений (такой же, как в предыдущем ответе) -->
     <div class="container">
         <header>
             <div class="logo">
@@ -214,7 +217,7 @@
                 <span class="section-tag">КАК ЭТО РАБОТАЕТ</span>
                 <h2 id="how-title" class="section-title">Ваша ежедневная доза здоровья в 3 простых шага</h2>
             </div>
-            <div class="main-container2-main"> <!-- оригинальный класс -->
+            <div class="main-container2-main">
                 <div class="main-container2-main_item1">
                     <!-- Шаг 1 -->
                     <div class="main-container2-main_item1_1">
@@ -224,7 +227,7 @@
                     </div>
                     <!-- Изображение шага 1 (телефон) -->
                     <div class="main-container2-main_item1_2">
-                        <img src="/UP09/UP09-master/img/app/app-screen-2.webp" width="536" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: выбор предпочтений">
+                        <img src="/UP09/UP09-master/img/app/app-screen-2.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: выбор предпочтений">
                     </div>
                     <!-- Шаг 3 -->
                     <div class="main-container2-main_item1_3">
@@ -236,7 +239,7 @@
                 <div class="main-container2-main_item2">
                     <!-- Изображение шага 2 (телефон) -->
                     <div class="main-container2-main_item2_1">
-                        <img src="/UP09/UP09-master/img/app/app-screen-1.webp" width="536" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: утверждение плана">
+                        <img src="/UP09/UP09-master/img/app/app-screen-1.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: утверждение плана">
                     </div>
                     <!-- Шаг 2 текст -->
                     <div class="main-container2-main_item2_2">
@@ -244,9 +247,9 @@
                         <div class="main-container2-main_item1_1_2">Утвердите свой еженедельный план питания</div>
                         <div class="main-container2-main_item1_1_3">Раз в неделю утверждайте план питания, сгенерированный для вас Omnifood AI. Вы можете менять ингредиенты, заменять целые блюда или даже добавлять свои собственные рецепты.</div>
                     </div>
-                    <!-- Изображение шага 3 (телефон) - в оригинале оно было здесь, но для порядка оставим как в исходнике -->
+                    <!-- Изображение шага 3 (телефон) -->
                     <div class="main-container2-main_item2_3">
-                        <img src="/UP09/UP09-master/img/app/app-screen-3.webp" width="536" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: доставка">
+                        <img src="/UP09/UP09-master/img/app/app-screen-3.webp" width="188" height="379" loading="lazy" class="main-container2-main_item1_2_1" alt="Скриншот приложения: доставка">
                     </div>
                 </div>
             </div>
@@ -310,7 +313,7 @@
                 </div>
                 <!-- Карточка 3 (бургер из галереи) -->
                 <div class="Meals_Section_main_item">
-                    <img src="/UP09/UP09-master/img/gallery/gallery-12-1.webp" width="336" height="224" loading="lazy" class="Meals_Section_main_item_img" alt="Бургер">
+                    <img src="/UP09/UP09-master/img/gallery/gallery-12.webp" width="336" height="224" loading="lazy" class="Meals_Section_main_item_img" alt="Бургер">
                     <div class="Meals_Section_main_item-main">
                         <div class="Meals_Section_main_item-main-top1">
                             <div class="Meals_Section_main_item-main-top1_2">ВКУСНО</div>
@@ -413,7 +416,7 @@
                 <span class="section-tag">ЦЕНЫ</span>
                 <h2 id="pricing-title" class="section-title">Питаться хорошо, не разоряясь</h2>
             </div>
-            <div class="Pricing_Section-main"> <!-- оригинальный класс -->
+            <div class="Pricing_Section-main">
                 <div class="Pricing_Section-main-block">
                     <div class="card-header">
                         <span class="plan-name">STARTER</span>

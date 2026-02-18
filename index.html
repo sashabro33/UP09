@@ -20,143 +20,15 @@
     <!-- Favicon -->
     <link rel="icon" href="/UP09/UP09-master/favicon.ico" type="image/x-icon">
 
-    <!-- Preconnect для шрифтов -->
+    <!-- Preconnect для шрифтов (ускоряет загрузку) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Preload критических ресурсов (можно добавить конкретные woff2, но preconnect достаточно) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap">
-    <link rel="preload" as="style" href="style.css">
-
-    <!-- Подключаем Google Fonts с display=swap для избежания CLS -->
+    <!-- Подключаем Google Fonts с display=swap -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Критический CSS (минимум для первого экрана) -->
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Rubik', sans-serif;
-            line-height: 1;
-            color: #333;
-            font-display: swap;
-        }
-        .container {
-            max-width: 120rem;
-            margin: 0 auto;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 5rem;
-            padding: 0 3rem;
-            background: #fff;
-        }
-        .logo img {
-            width: 10.21875rem;
-            height: 1.375rem;
-        }
-        .header-right {
-            display: flex;
-            gap: 1.875rem;
-            align-items: center;
-            font-weight: 500;
-            font-size: 1.125rem;
-        }
-        .header-right a {
-            text-decoration: none;
-            color: #333;
-        }
-        .btn-primary {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: #E67E22;
-            border-radius: 0.5625rem;
-            color: #fff !important;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        .btn-primary:hover {
-            background: #ad601c;
-        }
-        main {
-            background: #FDF2E9;
-            padding: 3rem 2rem 6rem;
-        }
-        .main-container {
-            display: flex;
-            max-width: 81.25rem;
-            margin: 0 auto;
-            gap: 6rem;
-        }
-        .main-container-left {
-            flex: 1;
-        }
-        h1 {
-            font-size: 3.25rem;
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.03125rem;
-            margin: 0 0 1.5rem;
-        }
-        .hero-text {
-            font-size: 1.25rem;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 2rem;
-        }
-        .button-group {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-        .btn-secondary {
-            display: inline-block;
-            padding: 0.875rem 2rem;
-            background: #fff;
-            border-radius: 0.5625rem;
-            color: #555;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .btn-secondary:hover {
-            background: #e0e0e0;
-        }
-        .customers {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .customer-avatars {
-            display: flex;
-        }
-        .customer-avatars img {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            border: 0.1875rem solid #FDF2E9;
-            margin-left: -0.5rem;
-        }
-        .customer-avatars img:first-child {
-            margin-left: 0;
-        }
-        .stats {
-            font-size: 1.125rem;
-            font-weight: 700;
-        }
-        .stats span {
-            color: #CF711F;
-        }
-        .hero-img {
-            width: 35.3125rem;
-            height: 35.625rem;
-            aspect-ratio: 565 / 570;
-        }
-    </style>
-    <!-- Асинхронная загрузка основного CSS -->
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <!-- Единый CSS — загружается синхронно, без CLS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">

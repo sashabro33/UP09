@@ -157,6 +157,7 @@ main {
     max-width: 81.25rem;
     margin: 0 auto;
     gap: 6rem;
+    min-height: 35rem;
 }
 
 .main-container-left {
@@ -245,8 +246,6 @@ h1 {
 
 .section-how {
     padding: 6.25rem 0;
-    max-width: 1920px ;
-    max-height: 1639px;
 }
 
 .how-grid {

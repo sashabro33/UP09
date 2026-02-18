@@ -165,6 +165,7 @@ main {
 .main-container-left {
     flex: 1;
     max-width: 1920px;
+    object-fit: cover;
 }
 
 h1 {

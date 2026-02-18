@@ -245,6 +245,8 @@ h1 {
 
 .section-how {
     padding: 6.25rem 0;
+    max-width: 1920px ;
+    max-height: 1639px;
 }
 
 .how-grid {

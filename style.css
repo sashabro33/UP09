@@ -8,8 +8,8 @@
     --text-light: #555;
     --text-muted: #767676;
     --white: #fff;
-    --border-radius: 0.5625rem; 
-    --box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); 
+    --border-radius: 0.5625rem;
+    --box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
     --transition: 0.3s ease;
     --font-main: 'Rubik', sans-serif;
 }
@@ -33,14 +33,14 @@ body {
 }
 
 .container {
-    max-width: 120rem; 
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .container-narrow {
-    max-width: 75rem; 
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 0 2rem; 
+    padding: 0 2rem;
 }
 
 .visually-hidden {
@@ -57,31 +57,30 @@ body {
 .section-tag {
     display: block;
     font-weight: 500;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     line-height: 1;
-    letter-spacing: 0.046875rem; 
+    letter-spacing: 0.046875rem;
     text-transform: uppercase;
     color: var(--primary-dark);
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .section-title {
     font-weight: 700;
-    font-size: 2.75rem; 
+    font-size: 2.75rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem; 
+    letter-spacing: -0.03125rem;
     color: var(--text-dark);
-    margin-bottom: 4rem; 
+    margin-bottom: 4rem;
 }
 
-/* Кнопки */
 .btn-primary {
     display: inline-block;
     background: var(--primary);
     color: var(--white);
     font-weight: 600;
-    font-size: 1.25rem; 
-    padding: 0.875rem 2rem; 
+    font-size: 1.25rem;
+    padding: 0.875rem 2rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: background var(--transition);
@@ -97,8 +96,8 @@ body {
     background: var(--white);
     color: var(--text-light);
     font-weight: 600;
-    font-size: 1.25rem; 
-    padding: 0.875rem 2rem; 
+    font-size: 1.25rem;
+    padding: 0.875rem 2rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: background var(--transition);
@@ -113,35 +112,33 @@ body {
     text-align: center;
 }
 
-/* Изображения */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Шапка */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem; 
-    max-width: 120rem; 
-    padding: 0 3rem; 
+    height: 5rem;
+    max-width: 120rem;
+    padding: 0 3rem;
     background: var(--white);
 }
 
 .logo img {
-    width: 10.21875rem; 
-    height: 1.375rem; 
+    width: 10.21875rem;
+    height: 1.375rem;
 }
 
 .header-right {
     display: flex;
-    gap: 1.875rem; 
+    gap: 1.875rem;
     align-items: center;
     font-weight: 500;
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
 }
 
 .header-right a {
@@ -149,18 +146,17 @@ header {
     color: var(--text-dark);
 }
 
-/* Главная секция */
 main {
     background: var(--primary-light);
-    max-width: 120rem; 
-    padding: 3rem 2rem 6rem; 
+    max-width: 120rem;
+    padding: 3rem 2rem 6rem;
 }
 
 .main-container {
     display: flex;
-    max-width: 81.25rem; 
+    max-width: 81.25rem;
     margin: 0 auto;
-    gap: 6rem; 
+    gap: 6rem;
 }
 
 .main-container-left {
@@ -168,30 +164,30 @@ main {
 }
 
 h1 {
-    font-size: 3.25rem; 
+    font-size: 3.25rem;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.03125rem; 
-    margin: 0 0 1.5rem; 
+    letter-spacing: -0.03125rem;
+    margin: 0 0 1.5rem;
 }
 
 .hero-text {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     line-height: 1.6;
     color: var(--text-light);
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .button-group {
     display: flex;
-    gap: 1rem; 
-    margin-bottom: 3rem; 
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .customers {
     display: flex;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .customer-avatars {
@@ -199,11 +195,11 @@ h1 {
 }
 
 .customer-avatars img {
-    width: 3rem; 
-    height: 3rem; 
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    border: 0.1875rem solid var(--primary-light); 
-    margin-left: -0.5rem; 
+    border: 0.1875rem solid var(--primary-light);
+    margin-left: -0.5rem;
 }
 
 .customer-avatars img:first-child {
@@ -211,7 +207,7 @@ h1 {
 }
 
 .stats {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
@@ -220,14 +216,13 @@ h1 {
 }
 
 .hero-img {
-    width: 35.3125rem; 
-    height: 35.625rem; 
+    width: 35.3125rem;
+    height: 35.625rem;
     aspect-ratio: 565 / 570;
 }
 
-/* Секция "Нас упоминают" */
 .section-mention {
-    padding: 3rem 2rem; 
+    padding: 3rem 2rem;
     text-align: center;
 }
 .mention-bottom {
@@ -235,8 +230,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem 3rem; 
-    margin-top: 1.5rem; 
+    gap: 2rem 3rem;
+    margin-top: 1.5rem;
 }
 .mention-bottom img {
     opacity: 0.5;
@@ -248,24 +243,23 @@ h1 {
     filter: none;
 }
 
-/* Секция "Как это работает" */
 .section-how {
-    padding: 6.25rem 0; 
+    padding: 6.25rem 0;
 }
 
 .how-grid {
-    max-width: 75rem; 
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 0 2rem; 
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    gap: 7.5rem; 
+    gap: 7.5rem;
 }
 
 .how-row {
     display: flex;
     align-items: center;
-    gap: 4rem; 
+    gap: 4rem;
 }
 
 .how-row.reverse {
@@ -276,27 +270,27 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .how-number {
     display: block;
     font-weight: 600;
-    font-size: 5.375rem; 
+    font-size: 5.375rem;
     line-height: 1;
     color: #ddd;
 }
 
 .how-heading {
     font-weight: 700;
-    font-size: 1.875rem; 
+    font-size: 1.875rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem; 
+    letter-spacing: -0.03125rem;
     color: var(--text-dark);
 }
 
 .how-description {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-light);
 }
@@ -311,7 +305,7 @@ h1 {
 .how-image-inner {
     position: relative;
     width: 100%;
-    max-width: 17.5rem; 
+    max-width: 17.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,8 +314,8 @@ h1 {
 .how-image-inner::before {
     content: '';
     position: absolute;
-    width: 15.625rem; 
-    height: 15.625rem; 
+    width: 15.625rem;
+    height: 15.625rem;
     border-radius: 50%;
     background-color: var(--primary-light);
     z-index: 0;
@@ -333,8 +327,8 @@ h1 {
 .how-image-inner::after {
     content: '';
     position: absolute;
-    width: 11.875rem; 
-    height: 11.875rem; 
+    width: 11.875rem;
+    height: 11.875rem;
     border-radius: 50%;
     background-color: #FAE5D3;
     z-index: 1;
@@ -353,16 +347,15 @@ h1 {
     aspect-ratio: 188 / 379;
 }
 
-/* Секция "Прием пищи" */
 .container-Meals_Section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 120rem; 
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 6.25rem 2rem; 
-    gap: 5rem; 
+    padding: 6.25rem 2rem;
+    gap: 5rem;
 }
 
 .Meals_Section-top {
@@ -371,79 +364,79 @@ h1 {
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 75rem; 
+    max-width: 75rem;
 }
 
 .Meals_Section-top_item1 {
     font-weight: 500;
-    font-size: 1rem; 
+    font-size: 1rem;
     line-height: 1;
-    letter-spacing: 0.046875rem; 
+    letter-spacing: 0.046875rem;
     color: var(--primary-dark);
     text-transform: uppercase;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .Meals_Section-top_item2 {
     font-weight: 700;
-    font-size: 2.75rem; 
+    font-size: 2.75rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem; 
+    letter-spacing: -0.03125rem;
     color: var(--text-dark);
-    max-width: 69.0625rem; 
+    max-width: 69.0625rem;
 }
 
 .Meals_Section_main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3.75rem; 
+    gap: 3.75rem;
     width: 100%;
-    max-width: 106.25rem; 
+    max-width: 106.25rem;
     margin: 0 auto;
 }
 
 .Meals_Section_main_item {
-    width: 21rem; 
-    min-height: 12.5rem; 
-    border-radius: 0.6875rem; 
-    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1); 
+    width: 21rem;
+    min-height: 12.5rem;
+    border-radius: 0.6875rem;
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1);
     transition: transform var(--transition), box-shadow var(--transition);
     background: var(--white);
 }
 
 .Meals_Section_main_item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.15); 
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.15);
 }
 
 .Meals_Section_main_item_img {
-    width: 21rem; 
-    height: 14rem; 
+    width: 21rem;
+    height: 14rem;
     object-fit: cover;
-    border-top-left-radius: 0.6875rem; 
-    border-top-right-radius: 0.6875rem; 
+    border-top-left-radius: 0.6875rem;
+    border-top-right-radius: 0.6875rem;
     aspect-ratio: 336 / 224;
 }
 
 .Meals_Section_main_item-main {
-    padding: 2rem 1.5rem 3rem; 
+    padding: 2rem 1.5rem 3rem;
 }
 
 .Meals_Section_main_item-main-top1 {
     display: flex;
-    gap: 0.25rem; 
-    margin-bottom: 0.75rem; 
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .Meals_Section_main_item-main-top1_1,
 .Meals_Section_main_item-main-top1_2,
 .Meals_Section_main_item-main-top1_3 {
     display: inline-block;
-    padding: 0.25rem 0.5rem; 
-    border-radius: 6.25rem; 
+    padding: 0.25rem 0.5rem;
+    border-radius: 6.25rem;
     font-weight: 700;
-    font-size: 0.75rem; 
+    font-size: 0.75rem;
     text-transform: uppercase;
     line-height: 1;
 }
@@ -454,28 +447,28 @@ h1 {
 
 .Meals_Section_main_item-main-H-japan {
     font-weight: 700;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: var(--text-dark);
-    margin-bottom: 1.25rem; 
+    margin-bottom: 1.25rem;
 }
 
 .Meals_Section_main_item-main-spis {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem; 
+    gap: 0.75rem;
 }
 
 .Meals_Section_main_item-main-spis-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem; 
-    font-size: 1.125rem; 
+    gap: 0.75rem;
+    font-size: 1.125rem;
     color: var(--text-light);
 }
 
 .Meals_Section_main_item-main-spis-item img {
-    width: 1.5rem; 
-    height: 1.5rem; 
+    width: 1.5rem;
+    height: 1.5rem;
     flex-shrink: 0;
 }
 
@@ -490,21 +483,21 @@ h1 {
 }
 
 .Meals_Section_main_item2 {
-    width: 21rem; 
+    width: 21rem;
     min-height: 12.5rem;
-    padding: 2rem 1.5rem; 
-    border-radius: 0.6875rem; 
+    padding: 2rem 1.5rem;
+    border-radius: 0.6875rem;
     background: var(--white);
-    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1); 
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1);
 }
 
 .Meals_Section_main_item2_top {
     font-weight: 700;
     font-size: 1.875rem;
     line-height: 1.2;
-    letter-spacing: -0.03125rem; 
+    letter-spacing: -0.03125rem;
     color: var(--text-dark);
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .Meals_Section_main_item2_spis ul {
@@ -515,15 +508,15 @@ h1 {
 .Meals_Section_main_item2_spis li {
     display: flex;
     align-items: center;
-    gap: 1rem; 
-    font-size: 1.125rem; 
+    gap: 1rem;
+    font-size: 1.125rem;
     color: var(--text-light);
-    margin-bottom: 0.875rem; 
+    margin-bottom: 0.875rem;
 }
 
 .Meals_Section_main_item2_spis li img {
-    width: 1.5rem; 
-    height: 1.5rem; 
+    width: 1.5rem;
+    height: 1.5rem;
     flex-shrink: 0;
 }
 
@@ -534,7 +527,7 @@ h1 {
 .Meals_Section-bottom a {
     color: var(--primary);
     font-weight: 500;
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     text-decoration: none;
 }
 
@@ -542,48 +535,47 @@ h1 {
     text-decoration: underline;
 }
 
-/* Секция отзывов */
 .section-testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: var(--primary-light);
-    padding: 6.25rem 2rem; 
-    gap: 3rem; 
+    padding: 6.25rem 2rem;
+    gap: 3rem;
 }
 
 .testimonials-left {
-    max-width: 37.5rem; 
+    max-width: 37.5rem;
     justify-self: end;
 }
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3.75rem; 
-    margin-top: 3rem; 
+    gap: 3.75rem;
+    margin-top: 3rem;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .testimonial img {
-    width: 4rem; 
-    height: 4rem; 
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
 }
 
 .testimonial blockquote {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.8;
     color: var(--text-light);
     margin: 0;
 }
 
 .testimonial figcaption {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: var(--text-muted);
 }
 
@@ -592,9 +584,9 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    width: 53.75rem; 
-    padding: 1rem; 
-    gap: 1rem; 
+    width: 53.75rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .Testimonials_Section-cont-right-row {
@@ -602,15 +594,15 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .Testimonials_Section-cont-right-row-img {
     width: 100%;
     height: auto;
-    max-width: 16.6875rem; 
+    max-width: 16.6875rem;
     transition: 0.2s;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
     aspect-ratio: 267 / 267;
 }
 
@@ -618,37 +610,36 @@ h1 {
     transform: scale(1.1);
     transition: 0.4s;
     border-radius: 1.25rem;
-    box-shadow: 0 0 1.5625rem rgba(0,0,0,0.3); 
+    box-shadow: 0 0 1.5625rem rgba(0,0,0,0.3);
 }
 
 .img1 {
     overflow: hidden;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
     flex: 1;
 }
 
-/* Секция цен */
 .section-pricing {
-    padding: 6.25rem 0; 
+    padding: 6.25rem 0;
 }
 
 .Pricing_Section-main {
     display: flex;
     justify-content: center;
-    gap: 3.75rem; 
+    gap: 3.75rem;
     max-width: 75rem;
-    margin: 0 auto 5rem; 
+    margin: 0 auto 5rem;
 }
 
 .Pricing_Section-main-block,
 .Pricing_Section-main-block2 {
     flex: 1;
-    max-width: 25rem; 
-    border-radius: 0.6875rem; 
-    padding: 2.875rem 2rem; 
+    max-width: 25rem;
+    border-radius: 0.6875rem;
+    padding: 2.875rem 2rem;
     position: relative;
     background: var(--white);
-    box-shadow: 0 0 1.25rem rgba(0,0,0,0.05); 
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.05);
 }
 
 .Pricing_Section-main-block2 {
@@ -658,70 +649,70 @@ h1 {
 
 .best-value-badge {
     position: absolute;
-    top: 1.875rem; 
-    right: -3.75rem; 
+    top: 1.875rem;
+    right: -3.75rem;
     background: #FFD43B;
     color: var(--text-dark);
     font-weight: 700;
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     text-transform: uppercase;
-    padding: 0.5rem 3.75rem; 
+    padding: 0.5rem 3.75rem;
     transform: rotate(45deg);
 }
 
 .card-header {
     text-align: center;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .plan-name {
     display: block;
     font-weight: 600;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     color: var(--primary-dark);
     text-transform: uppercase;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
 .price {
     font-weight: 600;
-    font-size: 3.875rem; 
+    font-size: 3.875rem;
     line-height: 1;
     color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 0.25rem; 
+    gap: 0.25rem;
 }
 
 .currency {
     font-weight: 500;
-    font-size: 1.875rem; 
+    font-size: 1.875rem;
 }
 
 .price-info {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: var(--text-muted);
-    margin-top: 1rem; 
+    margin-top: 1rem;
 }
 
 .features {
     list-style: none;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .features li {
     display: flex;
     align-items: center;
-    gap: 0.75rem; 
-    font-size: 1.125rem; 
+    gap: 0.75rem;
+    font-size: 1.125rem;
     color: var(--text-light);
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .features li img {
-    width: 1.5rem; 
-    height: 1.5rem; 
+    width: 1.5rem;
+    height: 1.5rem;
     flex-shrink: 0;
 }
 
@@ -731,17 +722,17 @@ h1 {
 
 .pricing-footnote {
     text-align: center;
-    font-size: 1rem; 
+    font-size: 1rem;
     color: var(--text-light);
-    max-width: 50rem; 
-    margin: 0 auto 4rem; 
+    max-width: 50rem;
+    margin: 0 auto 4rem;
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3.75rem; 
-    max-width: 75rem; 
+    gap: 3.75rem;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -750,108 +741,106 @@ h1 {
 }
 
 .feature img {
-    margin: 0 auto 1rem; 
-    width: 4rem; 
-    height: 4rem; 
+    margin: 0 auto 1rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .feature h3 {
     font-weight: 700;
-    font-size: 1.5rem; 
-    margin-bottom: 1rem; 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-dark);
 }
 
 .feature p {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.6;
     color: var(--text-light);
 }
 
-/* Секция CTA */
 .section-cta {
-    padding: 6.25rem 0; 
+    padding: 6.25rem 0;
 }
 
 .free-eat {
     display: flex;
-    max-width: 75rem; 
+    max-width: 75rem;
     margin: 0 auto;
     background: linear-gradient(135deg, #EB984E 0%, var(--primary) 100%);
-    border-radius: 0.6875rem; 
+    border-radius: 0.6875rem;
     box-shadow: var(--box-shadow);
     overflow: hidden;
 }
 
 .free-eat-left {
     flex: 2;
-    padding: 3rem 4rem; 
+    padding: 3rem 4rem;
 }
 
 .free-eat-left h2 {
     font-weight: 700;
-    font-size: 2.75rem; 
+    font-size: 2.75rem;
     line-height: 1.2;
     color: #45260A;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
 .free-eat-left p {
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.8;
     color: #45260A;
-    margin-bottom: 3.5rem; 
+    margin-bottom: 3.5rem;
 }
 
 .free-eat-left-form {
     display: flex;
-    gap: 2rem; 
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .free-eat-left-form-column,
 .free-eat-left-form-column2 {
     flex: 1;
-    min-width: 15.625rem; 
+    min-width: 15.625rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .free-eat-left-form-column-name_mail,
 .free-eat-left-form-column-item2 {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; 
+    gap: 0.5rem;
 }
 
 .free-eat-left-form-column-name_mail label,
 .free-eat-left-form-column-item2 label {
     font-weight: 500;
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #45260A;
 }
 
 .free-eat-left-form-column-name_mail input,
 .free-eat-left-form-column-item2 input {
-    padding: 0.75rem 1rem; 
+    padding: 0.75rem 1rem;
     border: none;
-    border-radius: 0.5625rem; 
-    font-size: 1rem; 
+    border-radius: 0.5625rem;
+    font-size: 1rem;
     background: var(--white);
 }
 
 .free-eat-left-form-column-button {
     background: #45260A;
     color: var(--white);
-    padding: 0.75rem 2rem; 
-    font-size: 1.25rem; 
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
     border: none;
-    border-radius: 0.5625rem; 
+    border-radius: 0.5625rem;
     cursor: pointer;
     transition: background var(--transition);
     width: 100%;
-    margin-top: 2rem;
 }
 
 .free-eat-left-form-column-button:hover {
@@ -862,15 +851,14 @@ h1 {
     flex: 1;
     object-fit: cover;
     width: 100%;
-    max-width: 23.6875rem; 
+    max-width: 23.6875rem;
     aspect-ratio: 379 / 585;
 }
 
-/* Подвал */
 footer {
-    max-width: 120rem; 
+    max-width: 120rem;
     background: var(--white);
-    padding: 8rem 2rem; 
+    padding: 8rem 2rem;
     border-top: 1px solid #eee;
 }
 
@@ -878,21 +866,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 75rem; 
+    max-width: 75rem;
     margin: 0 auto;
-    gap: 5rem; 
+    gap: 5rem;
 }
 
 .footer-col {
     flex: 1;
-    min-width: 10rem; 
+    min-width: 10rem;
 }
 
 .footer-col h4 {
     font-weight: 500;
     font-size: 1.125rem;
     color: var(--text-light);
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .footer-col ul {
@@ -900,13 +888,13 @@ footer {
 }
 
 .footer-col li {
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .footer-col a {
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -915,13 +903,13 @@ footer {
 }
 
 .footer-logo {
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
 }
 
 .social-icons {
     display: flex;
-    gap: 1rem; 
-    margin-bottom: 1.5rem; 
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .social-icons a {
@@ -929,7 +917,7 @@ footer {
 }
 
 .copyright {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
     color: var(--text-muted);
     line-height: 1.6;
 }
@@ -949,45 +937,41 @@ address a:hover {
     color: var(--primary);
 }
 
-/* ========== АДАПТИВНОСТЬ ========== */
-
-/* 1440px */
 @media (max-width: 1440px) {
     .main-container {
-        max-width: 68.75rem; 
-        gap: 3.75rem; 
+        max-width: 68.75rem;
+        gap: 3.75rem;
     }
     h1 {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
     .hero-text {
-        font-size: 1.125rem; 
+        font-size: 1.125rem;
     }
     .hero-img {
-        width: 31.25rem; 
+        width: 31.25rem;
         height: auto;
     }
     .section-title {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
     .how-grid {
-        max-width: 68.75rem; 
+        max-width: 68.75rem;
     }
     .how-number {
-        font-size: 4.5rem; 
+        font-size: 4.5rem;
     }
     .how-heading {
-        font-size: 1.75rem; 
+        font-size: 1.75rem;
     }
     .Testimonials_Section-cont-right {
-        width: 43.75rem; 
+        width: 43.75rem;
     }
     .Testimonials_Section-cont-right-row-img {
-        max-width: 13.75rem; 
+        max-width: 13.75rem;
     }
 }
 
-/* 1024px (и планшеты до 1200px) */
 @media (max-width: 1200px) {
     .main-container {
         flex-direction: column;
@@ -996,7 +980,7 @@ address a:hover {
     }
     .hero-img {
         width: 80%;
-        max-width: 31.25rem; 
+        max-width: 31.25rem;
         height: auto;
         margin: 0 auto;
     }
@@ -1004,24 +988,24 @@ address a:hover {
         justify-content: center;
     }
     .section-title {
-        font-size: 2.25rem; 
+        font-size: 2.25rem;
     }
     .how-row {
         flex-direction: column !important;
         text-align: center;
-        gap: 2rem; 
+        gap: 2rem;
     }
     .how-image-inner {
-        max-width: 15rem; 
+        max-width: 15rem;
     }
     .how-number {
-        font-size: 4rem; 
+        font-size: 4rem;
     }
     .how-heading {
-        font-size: 1.625rem; 
+        font-size: 1.625rem;
     }
     .Meals_Section_main {
-        max-width: 56.25rem; 
+        max-width: 56.25rem;
     }
     .Meals_Section_main_item,
     .Meals_Section_main_item2 {
@@ -1037,33 +1021,33 @@ address a:hover {
     }
     .testimonials-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem; 
+        gap: 2rem;
     }
     .Testimonials_Section-cont-right {
         width: 100%;
-        padding: 1rem 0; 
+        padding: 1rem 0;
     }
     .Testimonials_Section-cont-right-row {
         flex-wrap: wrap;
         justify-content: center;
     }
     .img1 {
-        min-width: 11.25rem; 
+        min-width: 11.25rem;
         flex: 0 1 auto;
     }
     .Pricing_Section-main {
         flex-direction: column;
         align-items: center;
-        gap: 2rem; 
+        gap: 2rem;
     }
     .Pricing_Section-main-block,
     .Pricing_Section-main-block2 {
         width: 100%;
-        max-width: 28.125rem; 
+        max-width: 28.125rem;
     }
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem; 
+        gap: 2.5rem;
     }
     .free-eat {
         flex-direction: column;
@@ -1076,82 +1060,81 @@ address a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 2rem; 
+        gap: 2rem;
     }
     .footer-col {
         width: 100%;
-        max-width: 18.75rem; 
+        max-width: 18.75rem;
     }
 }
 
-
 @media (max-width: 768px) {
     header {
-        padding: 0 1.5rem; 
+        padding: 0 1.5rem;
     }
     .header-right {
-        gap: 1.25rem; 
-        font-size: 1rem; 
+        gap: 1.25rem;
+        font-size: 1rem;
     }
     h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
     .hero-text {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .button-group {
         flex-direction: column;
         align-items: center;
-        gap: 0.75rem; 
+        gap: 0.75rem;
     }
     .btn-primary, .btn-secondary {
         width: 100%;
-        max-width: 18.75rem; 
+        max-width: 18.75rem;
         text-align: center;
     }
     .customers {
         flex-direction: column;
-        gap: 1.5rem; 
+        gap: 1.5rem;
     }
     .section-title {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
     .how-number {
-        font-size: 3.5rem; 
+        font-size: 3.5rem;
     }
     .how-heading {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
     .how-description {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .Meals_Section_main {
-        gap: 1.5rem; 
+        gap: 1.5rem;
     }
     .Meals_Section_main_item,
     .Meals_Section_main_item2 {
         width: 100%;
-        max-width: 25rem; 
+        max-width: 25rem;
     }
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
     .Testimonials_Section-cont-right {
-        display: none; 
+        display: none;
     }
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 2rem; 
+        gap: 2rem;
     }
     .free-eat-left {
-        padding: 2rem 1.5rem; 
+        padding: 2rem 1.5rem;
     }
     .free-eat-left h2 {
-        font-size: 2.25rem; 
+        font-size: 2.25rem;
     }
     .free-eat-left-form {
         flex-direction: column;
-        gap: 1rem; 
+        gap: 1rem;
     }
     .free-eat-left-form-column,
     .free-eat-left-form-column2 {
@@ -1161,156 +1144,155 @@ address a:hover {
         width: 100%;
     }
     .eating-img {
-        display: none; 
+        display: none;
     }
     footer {
-        padding: 4rem 1.5rem; 
+        padding: 4rem 1.5rem;
     }
 }
 
-/* 390px (мобильные) */
 @media (max-width: 390px) {
     header {
         flex-direction: column;
         height: auto;
-        padding: 1rem; 
-        gap: 1rem; /
+        padding: 1rem;
+        gap: 1rem;
     }
     .header-right {
-        display: none; 
+        display: none;
     }
     main {
-        padding: 2rem 1rem 4rem; 
+        padding: 2rem 1rem 4rem;
     }
     h1 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
     .hero-text {
-        font-size: 0.9375rem; 
+        font-size: 0.9375rem;
     }
     .button-group {
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
     }
     .stats {
-        font-size: 1rem; 
+        font-size: 1rem;
         text-align: center;
     }
     .hero-img {
-        display: none; 
+        display: none;
     }
     .section-mention {
-        padding: 2rem 1rem; 
+        padding: 2rem 1rem;
     }
     .mention-bottom {
         gap: 1.5rem;
     }
     .mention-bottom img {
-        max-width: 7.5rem; 
+        max-width: 7.5rem;
         height: auto;
     }
     .section-title {
-        font-size: 1.75rem; 
-        margin-bottom: 2rem; 
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
     }
     .how-grid {
-        gap: 3rem; 
-        padding: 0 1rem; 
+        gap: 3rem;
+        padding: 0 1rem;
     }
     .how-number {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
     .how-heading {
-        font-size: 1.375rem; 
+        font-size: 1.375rem;
     }
     .how-description {
-        font-size: 0.9375rem; 
+        font-size: 0.9375rem;
     }
     .how-image-inner {
-        max-width: 12.5rem; 
+        max-width: 12.5rem;
     }
     .how-image-inner::before {
-        width: 12.5rem; 
-        height: 12.5rem; 
+        width: 12.5rem;
+        height: 12.5rem;
     }
     .how-image-inner::after {
-        width: 9.375rem; 
-        height: 9.375rem; 
+        width: 9.375rem;
+        height: 9.375rem;
     }
     .container-Meals_Section {
-        padding: 0 1rem; 
-        gap: 3rem; 
+        padding: 0 1rem;
+        gap: 3rem;
     }
     .Meals_Section-top_item2 {
-        font-size: 1.75rem; 
+        font-size: 1.75rem;
     }
     .Meals_Section_main_item-main {
-        padding: 1.5rem 1rem 2rem; 
+        padding: 1.5rem 1rem 2rem;
     }
     .Meals_Section_main_item-main-H-japan {
-        font-size: 1.375rem; 
+        font-size: 1.375rem;
     }
     .Meals_Section_main_item-main-spis-item {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .Meals_Section_main_item2_top {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
     .Meals_Section_main_item2_spis li {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .section-testimonials {
-        padding: 4rem 1rem; 
+        padding: 4rem 1rem;
     }
     .testimonial blockquote {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .Pricing_Section-main-block,
     .Pricing_Section-main-block2 {
-        padding: 2rem 1.25rem; 
+        padding: 2rem 1.25rem;
     }
     .price {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
     .currency {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
     .features li {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
     .feature h3 {
-        font-size: 1.25rem; 
+        font-size: 1.25rem;
     }
     .feature p {
         font-size: 1rem;
     }
     .free-eat-left {
-        padding: 1.5rem 1rem; 
+        padding: 1.5rem 1rem;
     }
     .free-eat-left h2 {
-        font-size: 1.75rem; 
+        font-size: 1.75rem;
     }
     .free-eat-left p {
-        font-size: 1rem; 
-        margin-bottom: 2.5rem; 
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
     }
     .free-eat-left-form-column-name_mail input,
     .free-eat-left-form-column-item2 input {
-        font-size: 0.875rem; 
+        font-size: 0.875rem;
     }
     .free-eat-left-form-column-button {
-        font-size: 1.125rem; 
+        font-size: 1.125rem;
     }
     footer {
-        padding: 3rem 1rem; 
+        padding: 3rem 1rem;
     }
     .footer-col h4 {
-        font-size: 1rem; 
-        margin-bottom: 1.5rem; 
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     .footer-col a {
-        font-size: 0.875rem; 
+        font-size: 0.875rem;
     }
     .copyright {
-        font-size: 0.75rem; 
+        font-size: 0.75rem;
     }
 }

@@ -19,38 +19,49 @@
     <meta property="twitter:image" content="https://example.com/UP09/UP09-master/img/hero.webp">
     <!-- Favicon -->
     <link rel="icon" href="/UP09/UP09-master/favicon.ico" type="image/x-icon">
+
+    <!-- Preconnect для шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload критических ресурсов (можно добавить конкретные woff2, но preconnect достаточно) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap">
+    <link rel="preload" as="style" href="style.css">
+
+    <!-- Подключаем Google Fonts с display=swap для избежания CLS -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Предзагрузка основного CSS -->
-    <link rel="preload" href="style.css" as="style">
+
+    <!-- Критический CSS (минимум для первого экрана) -->
     <style>
         body {
             margin: 0;
             font-family: 'Rubik', sans-serif;
             line-height: 1;
             color: #333;
+            font-display: swap;
         }
         .container {
-            max-width: 120rem; 
+            max-width: 120rem;
             margin: 0 auto;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 5rem; 
-            padding: 0 3rem; 
+            height: 5rem;
+            padding: 0 3rem;
             background: #fff;
         }
         .logo img {
-            width: 10.21875rem; 
-            height: 1.375rem; 
+            width: 10.21875rem;
+            height: 1.375rem;
         }
         .header-right {
             display: flex;
             gap: 1.875rem;
             align-items: center;
             font-weight: 500;
-            font-size: 1.125rem; 
+            font-size: 1.125rem;
         }
         .header-right a {
             text-decoration: none;
@@ -58,9 +69,9 @@
         }
         .btn-primary {
             display: inline-block;
-            padding: 0.75rem 1.5rem; 
+            padding: 0.75rem 1.5rem;
             background: #E67E22;
-            border-radius: 0.5625rem; 
+            border-radius: 0.5625rem;
             color: #fff !important;
             font-weight: 600;
             transition: background 0.3s;
@@ -70,40 +81,40 @@
         }
         main {
             background: #FDF2E9;
-            padding: 3rem 2rem 6rem; 
+            padding: 3rem 2rem 6rem;
         }
         .main-container {
             display: flex;
-            max-width: 81.25rem; 
+            max-width: 81.25rem;
             margin: 0 auto;
-            gap: 6rem; 
+            gap: 6rem;
         }
         .main-container-left {
             flex: 1;
         }
         h1 {
-            font-size: 3.25rem; 
+            font-size: 3.25rem;
             font-weight: 700;
             line-height: 1.1;
-            letter-spacing: -0.03125rem; 
-            margin: 0 0 1.5rem; 
+            letter-spacing: -0.03125rem;
+            margin: 0 0 1.5rem;
         }
         .hero-text {
-            font-size: 1.25rem; 
+            font-size: 1.25rem;
             line-height: 1.6;
             color: #555;
-            margin-bottom: 2rem; 
+            margin-bottom: 2rem;
         }
         .button-group {
             display: flex;
-            gap: 1rem; 
-            margin-bottom: 3rem; 
+            gap: 1rem;
+            margin-bottom: 3rem;
         }
         .btn-secondary {
             display: inline-block;
-            padding: 0.875rem 2rem; 
+            padding: 0.875rem 2rem;
             background: #fff;
-            border-radius: 0.5625rem; 
+            border-radius: 0.5625rem;
             color: #555;
             font-weight: 600;
             text-decoration: none;
@@ -115,31 +126,32 @@
         .customers {
             display: flex;
             align-items: center;
-            gap: 1rem; 
+            gap: 1rem;
         }
         .customer-avatars {
             display: flex;
         }
         .customer-avatars img {
-            width: 3rem; 
-            height: 3rem; 
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
             border: 0.1875rem solid #FDF2E9;
-            margin-left: -0.5rem; 
+            margin-left: -0.5rem;
         }
         .customer-avatars img:first-child {
             margin-left: 0;
         }
         .stats {
-            font-size: 1.125rem; 
+            font-size: 1.125rem;
             font-weight: 700;
         }
         .stats span {
             color: #CF711F;
         }
         .hero-img {
-            width: 35.3125rem; 
-            height: 35.625rem; 
+            width: 35.3125rem;
+            height: 35.625rem;
+            aspect-ratio: 565 / 570;
         }
     </style>
     <!-- Асинхронная загрузка основного CSS -->
@@ -151,7 +163,7 @@
         <header>
             <div class="logo">
                 <a href="/">
-                    <img src="/UP09/UP09-master/img/omnifood-logo-1200.webp" width="164" height="22" alt="Omnifood">
+                    <img src="/UP09/UP09-master/img/omnifood-logo-1200.webp" width="164" height="22" alt="Omnifood" loading="eager">
                 </a>
             </div>
             <nav class="header-right" aria-label="Основная навигация">
@@ -187,7 +199,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="/UP09/UP09-master/img/hero.webp" width="565" height="570" class="hero-img" alt="Тарелка с полезной едой">
+                    <img src="/UP09/UP09-master/img/hero.webp" width="565" height="570" class="hero-img" alt="Тарелка с полезной едой" fetchpriority="high" loading="eager">
                 </div>
             </div>
         </main>
@@ -256,7 +268,7 @@
             </div>
         </section>
 
-        <!-- Секция "Прием пищи" -->
+        <!-- Секция "Прием пищи" (три карточки, включая бургер) -->
         <section class="container-Meals_Section" id="meals" aria-labelledby="meals-title">
             <div class="Meals_Section-top">
                 <div class="Meals_Section-top_item1">ПРИЕМ ПИЩИ</div>
@@ -312,9 +324,9 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Карточка 3 (бургер) -->
                 <div class="Meals_Section_main_item">
-                    <img src="/UP09/UP09-master/img/gallery/gallery-12-1.webp" width="336" height="224" loading="lazy" class="Meals_Section_main_item_img" alt="Бургер">
+                    <img src="/UP09/UP09-master/img/gallery/gallery-12.webp" width="336" height="224" loading="lazy" class="Meals_Section_main_item_img" alt="Бургер">
                     <div class="Meals_Section_main_item-main">
                         <div class="Meals_Section_main_item-main-top1">
                             <div class="Meals_Section_main_item-main-top1_2">ВКУСНО</div>
@@ -358,7 +370,7 @@
             <div class="Meals_Section-bottom"><a href="#" class="Meals_Section-bottom">Посмотреть все рецепты →</a></div>
         </section>
 
-        <!-- Секция отзывов  -->
+        <!-- Секция отзывов (с галереей) -->
         <section class="section-testimonials" id="testimonials" aria-labelledby="testimonials-title">
             <div class="testimonials-left">
                 <span class="section-tag">ОТЗЫВЫ</span>
@@ -410,7 +422,7 @@
             </div>
         </section>
 
-        <!-- Секция цен -->
+        <!-- Секция цен (с бейджем BEST VALUE) -->
         <section class="section-pricing" id="pricing" aria-labelledby="pricing-title">
             <div class="container-narrow">
                 <span class="section-tag">ЦЕНЫ</span>
@@ -432,7 +444,7 @@
                     <a href="#cta" class="btn-primary btn-block">Начните правильно питаться</a>
                 </div>
                 <div class="Pricing_Section-main-block2 complete">
-                    <span class="best-value-badge">BEST VALUE</span>   
+                    <span class="best-value-badge">BEST VALUE</span>
                     <div class="card-header">
                         <span class="plan-name">COMPLETE</span>
                         <div class="price"><span class="currency">₽</span>6490</div>
@@ -442,8 +454,6 @@
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> <strong>2 приема пищи</strong> в день</li>
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Заказ <strong>24/7</strong></li>
                         <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Доставка бесплатная</li>
-                        <li><img src="/UP09/UP09-master/img/Component 2.webp" width="24" height="24" loading="lazy" alt=""> Получите доступ к новейшим
-                        рецептам</li>
                     </ul>
                     <a href="#cta" class="btn-primary btn-block">Начните правильно питаться</a>
                 </div>
@@ -509,7 +519,7 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <a href="/"><img src="/UP09/UP09-master/img/omnifood-logo-1200.webp" width="164" height="22" alt="Omnifood"></a>
+                        <a href="/"><img src="/UP09/UP09-master/img/omnifood-logo-1200.webp" width="164" height="22" alt="Omnifood" loading="eager"></a>
                     </div>
                     <div class="social-icons">
                         <a href="#" aria-label="Instagram"><img src="/UP09/UP09-master/img/Item1.webp" width="24" height="28" alt=""></a>

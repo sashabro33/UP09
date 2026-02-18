@@ -842,6 +842,7 @@ h1 {
     cursor: pointer;
     transition: background var(--transition);
     width: 100%;
+    margin-top: 2rem;
 }
 
 .free-eat-left-form-column-button:hover {

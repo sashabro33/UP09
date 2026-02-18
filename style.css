@@ -8,8 +8,8 @@
     --text-light: #555;
     --text-muted: #767676;
     --white: #fff;
-    --border-radius: 9px;
-    --box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+    --border-radius: 0.5625rem; /* 9px */
+    --box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); /* 0 24px 48px */
     --transition: 0.3s ease;
     --font-main: 'Rubik', sans-serif;
 }
@@ -29,17 +29,18 @@ body {
     font-family: var(--font-main);
     line-height: 1.5;
     color: var(--text-dark);
+    font-display: swap;
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 120rem; /* 1920px */
     margin: 0 auto;
 }
 
 .container-narrow {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 2rem; /* 32px */
 }
 
 .visually-hidden {
@@ -56,21 +57,21 @@ body {
 .section-tag {
     display: block;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     line-height: 1;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.046875rem; /* 0.75px */
     text-transform: uppercase;
     color: var(--primary-dark);
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
 }
 
 .section-title {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 2.75rem; /* 44px */
     line-height: 1.2;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.03125rem; /* -0.5px */
     color: var(--text-dark);
-    margin-bottom: 64px; /* увеличено */
+    margin-bottom: 4rem; /* 64px */
 }
 
 /* Кнопки */
@@ -79,8 +80,8 @@ body {
     background: var(--primary);
     color: var(--white);
     font-weight: 600;
-    font-size: 20px;
-    padding: 14px 32px;
+    font-size: 1.25rem; /* 20px */
+    padding: 0.875rem 2rem; /* 14px 32px */
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: background var(--transition);
@@ -96,8 +97,8 @@ body {
     background: var(--white);
     color: var(--text-light);
     font-weight: 600;
-    font-size: 20px;
-    padding: 14px 32px;
+    font-size: 1.25rem; /* 20px */
+    padding: 0.875rem 2rem; /* 14px 32px */
     border-radius: var(--border-radius);
     text-decoration: none;
     transition: background var(--transition);
@@ -124,23 +125,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    max-width: 1920px;
-    padding: 0 48px;
+    height: 5rem; /* 80px */
+    max-width: 120rem; /* 1920px */
+    padding: 0 3rem; /* 48px */
     background: var(--white);
 }
 
 .logo img {
-    width: 163.5px;
-    height: 22px;
+    width: 10.21875rem; /* 163.5px */
+    height: 1.375rem; /* 22px */
 }
 
 .header-right {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem; /* 30px */
     align-items: center;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
 .header-right a {
@@ -151,48 +152,46 @@ header {
 /* Главная секция */
 main {
     background: var(--primary-light);
-    max-width: 1920px;
-    padding: 48px 32px 96px;
+    max-width: 120rem; /* 1920px */
+    padding: 3rem 2rem 6rem; /* 48px 32px 96px */
 }
 
 .main-container {
     display: flex;
-    max-width: 1300px;
+    max-width: 81.25rem; /* 1300px */
     margin: 0 auto;
-    gap: 96px;
+    gap: 6rem; /* 96px */
 }
 
 .main-container-left {
     flex: 1;
-    max-width: 1920px;
-    object-fit: cover;
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 3.25rem; /* 52px */
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.5px;
-    margin: 0 0 24px;
+    letter-spacing: -0.03125rem; /* -0.5px */
+    margin: 0 0 1.5rem; /* 24px */
 }
 
 .hero-text {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     line-height: 1.6;
     color: var(--text-light);
-    margin-bottom: 32px;
+    margin-bottom: 2rem; /* 32px */
 }
 
 .button-group {
     display: flex;
-    gap: 16px;
-    margin-bottom: 48px;
+    gap: 1rem; /* 16px */
+    margin-bottom: 3rem; /* 48px */
 }
 
 .customers {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem; /* 16px */
 }
 
 .customer-avatars {
@@ -200,11 +199,11 @@ h1 {
 }
 
 .customer-avatars img {
-    width: 48px;
-    height: 48px;
+    width: 3rem; /* 48px */
+    height: 3rem; /* 48px */
     border-radius: 50%;
-    border: 3px solid var(--primary-light);
-    margin-left: -8px;
+    border: 0.1875rem solid var(--primary-light); /* 3px */
+    margin-left: -0.5rem; /* -8px */
 }
 
 .customer-avatars img:first-child {
@@ -212,7 +211,7 @@ h1 {
 }
 
 .stats {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-weight: 700;
 }
 
@@ -221,13 +220,14 @@ h1 {
 }
 
 .hero-img {
-    width: 565px;
-    height: 570px;
+    width: 35.3125rem; /* 565px */
+    height: 35.625rem; /* 570px */
+    aspect-ratio: 565 / 570;
 }
 
 /* Секция "Нас упоминают" */
 .section-mention {
-    padding: 48px 32px;
+    padding: 3rem 2rem; /* 48px 32px */
     text-align: center;
 }
 .mention-bottom {
@@ -235,8 +235,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 32px 48px;
-    margin-top: 24px;
+    gap: 2rem 3rem; /* 32px 48px */
+    margin-top: 1.5rem; /* 24px */
 }
 .mention-bottom img {
     opacity: 0.5;
@@ -250,22 +250,22 @@ h1 {
 
 /* Секция "Как это работает" */
 .section-how {
-    padding: 100px 0; /* увеличен вертикальный отступ */
+    padding: 6.25rem 0; /* 100px */
 }
 
 .how-grid {
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 2rem; /* 32px */
     display: flex;
     flex-direction: column;
-    gap: 120px; /* увеличено */
+    gap: 7.5rem; /* 120px */
 }
 
 .how-row {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 4rem; /* 64px */
 }
 
 .how-row.reverse {
@@ -276,27 +276,27 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 24px; /* добавлено для равномерных отступов */
+    gap: 1.5rem; /* 24px */
 }
 
 .how-number {
     display: block;
     font-weight: 600;
-    font-size: 86px;
+    font-size: 5.375rem; /* 86px */
     line-height: 1;
     color: #ddd;
 }
 
 .how-heading {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     line-height: 1.2;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.03125rem; /* -0.5px */
     color: var(--text-dark);
 }
 
 .how-description {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.8;
     color: var(--text-light);
 }
@@ -311,7 +311,7 @@ h1 {
 .how-image-inner {
     position: relative;
     width: 100%;
-    max-width: 280px;
+    max-width: 17.5rem; /* 280px */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,8 +320,8 @@ h1 {
 .how-image-inner::before {
     content: '';
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 15.625rem; /* 250px */
+    height: 15.625rem; /* 250px */
     border-radius: 50%;
     background-color: var(--primary-light);
     z-index: 0;
@@ -333,8 +333,8 @@ h1 {
 .how-image-inner::after {
     content: '';
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 11.875rem; /* 190px */
+    height: 11.875rem; /* 190px */
     border-radius: 50%;
     background-color: #FAE5D3;
     z-index: 1;
@@ -349,7 +349,8 @@ h1 {
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 380px;
+    max-height: 23.75rem; /* 380px */
+    aspect-ratio: 188 / 379;
 }
 
 /* Секция "Прием пищи" */
@@ -358,10 +359,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1920px;
+    max-width: 120rem; /* 1920px */
     margin: 0 auto;
-    padding: 100px 32px; /* увеличен вертикальный отступ */
-    gap: 80px;
+    padding: 6.25rem 2rem; /* 100px 32px */
+    gap: 5rem; /* 80px */
 }
 
 .Meals_Section-top {
@@ -370,77 +371,79 @@ h1 {
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
 }
 
 .Meals_Section-top_item1 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     line-height: 1;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.046875rem; /* 0.75px */
     color: var(--primary-dark);
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
 }
 
 .Meals_Section-top_item2 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 2.75rem; /* 44px */
     line-height: 1.2;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.03125rem; /* -0.5px */
     color: var(--text-dark);
-    max-width: 1105px;
+    max-width: 69.0625rem; /* 1105px */
 }
 
 .Meals_Section_main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px; /* увеличено */
+    gap: 3.75rem; /* 60px */
     width: 100%;
-    max-width: 1700px;
+    max-width: 106.25rem; /* 1700px */
     margin: 0 auto;
 }
 
 .Meals_Section_main_item {
-    width: 336px;
-    border-radius: 11px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 21rem; /* 336px */
+    min-height: 12.5rem; /* 200px */
+    border-radius: 0.6875rem; /* 11px */
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1); /* 0 0 20px */
     transition: transform var(--transition), box-shadow var(--transition);
     background: var(--white);
 }
 
 .Meals_Section_main_item:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.15); /* 0 10px 30px */
 }
 
 .Meals_Section_main_item_img {
-    width: 336px;
-    height: 224px;
+    width: 21rem; /* 336px */
+    height: 14rem; /* 224px */
     object-fit: cover;
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
+    border-top-left-radius: 0.6875rem; /* 11px */
+    border-top-right-radius: 0.6875rem; /* 11px */
+    aspect-ratio: 336 / 224;
 }
 
 .Meals_Section_main_item-main {
-    padding: 32px 24px 48px;
+    padding: 2rem 1.5rem 3rem; /* 32px 24px 48px */
 }
 
 .Meals_Section_main_item-main-top1 {
     display: flex;
-    gap: 4px;
-    margin-bottom: 12px;
+    gap: 0.25rem; /* 4px */
+    margin-bottom: 0.75rem; /* 12px */
 }
 
 .Meals_Section_main_item-main-top1_1,
 .Meals_Section_main_item-main-top1_2,
 .Meals_Section_main_item-main-top1_3 {
     display: inline-block;
-    padding: 4px 8px;
-    border-radius: 100px;
+    padding: 0.25rem 0.5rem; /* 4px 8px */
+    border-radius: 6.25rem; /* 100px */
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     text-transform: uppercase;
     line-height: 1;
 }
@@ -451,28 +454,28 @@ h1 {
 
 .Meals_Section_main_item-main-H-japan {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .Meals_Section_main_item-main-spis {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem; /* 12px */
 }
 
 .Meals_Section_main_item-main-spis-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 18px;
+    gap: 0.75rem; /* 12px */
+    font-size: 1.125rem; /* 18px */
     color: var(--text-light);
 }
 
 .Meals_Section_main_item-main-spis-item img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
     flex-shrink: 0;
 }
 
@@ -487,20 +490,21 @@ h1 {
 }
 
 .Meals_Section_main_item2 {
-    width: 336px;
-    padding: 32px 24px;
-    border-radius: 11px;
+    width: 21rem; /* 336px */
+    min-height: 12.5rem; /* 200px */
+    padding: 2rem 1.5rem; /* 32px 24px */
+    border-radius: 0.6875rem; /* 11px */
     background: var(--white);
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1); /* 0 0 20px */
 }
 
 .Meals_Section_main_item2_top {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     line-height: 1.2;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.03125rem; /* -0.5px */
     color: var(--text-dark);
-    margin-bottom: 32px;
+    margin-bottom: 2rem; /* 32px */
 }
 
 .Meals_Section_main_item2_spis ul {
@@ -511,15 +515,15 @@ h1 {
 .Meals_Section_main_item2_spis li {
     display: flex;
     align-items: center;
-    gap: 16px;
-    font-size: 18px;
+    gap: 1rem; /* 16px */
+    font-size: 1.125rem; /* 18px */
     color: var(--text-light);
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem; /* 14px */
 }
 
 .Meals_Section_main_item2_spis li img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
     flex-shrink: 0;
 }
 
@@ -530,7 +534,7 @@ h1 {
 .Meals_Section-bottom a {
     color: var(--primary);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     text-decoration: none;
 }
 
@@ -543,43 +547,43 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: var(--primary-light);
-    padding: 100px 32px; /* увеличен отступ */
-    gap: 48px;
+    padding: 6.25rem 2rem; /* 100px 32px */
+    gap: 3rem; /* 48px */
 }
 
 .testimonials-left {
-    max-width: 600px;
+    max-width: 37.5rem; /* 600px */
     justify-self: end;
 }
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px; /* увеличено */
-    margin-top: 48px;
+    gap: 3.75rem; /* 60px */
+    margin-top: 3rem; /* 48px */
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
-    gap: 24px; /* увеличено */
+    gap: 1.5rem; /* 24px */
 }
 
 .testimonial img {
-    width: 64px;
-    height: 64px;
+    width: 4rem; /* 64px */
+    height: 4rem; /* 64px */
     border-radius: 50%;
 }
 
 .testimonial blockquote {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.8;
     color: var(--text-light);
     margin: 0;
 }
 
 .testimonial figcaption {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: var(--text-muted);
 }
 
@@ -588,9 +592,9 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    width: 860px;
-    padding: 16px;
-    gap: 16px;
+    width: 53.75rem; /* 860px */
+    padding: 1rem; /* 16px */
+    gap: 1rem; /* 16px */
 }
 
 .Testimonials_Section-cont-right-row {
@@ -598,52 +602,53 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 1rem; /* 16px */
 }
 
 .Testimonials_Section-cont-right-row-img {
     width: 100%;
     height: auto;
-    max-width: 267px;
+    max-width: 16.6875rem; /* 267px */
     transition: 0.2s;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
+    aspect-ratio: 267 / 267;
 }
 
 .Testimonials_Section-cont-right-row-img:hover {
     transform: scale(1.1);
     transition: 0.4s;
-    border-radius: 20px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    border-radius: 1.25rem; /* 20px */
+    box-shadow: 0 0 1.5625rem rgba(0,0,0,0.3); /* 0 0 25px */
 }
 
 .img1 {
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0.5rem; /* 8px */
     flex: 1;
 }
 
 /* Секция цен */
 .section-pricing {
-    padding: 100px 0; /* увеличен вертикальный отступ */
+    padding: 6.25rem 0; /* 100px */
 }
 
 .Pricing_Section-main {
     display: flex;
     justify-content: center;
-    gap: 60px; /* увеличено */
-    max-width: 1200px;
-    margin: 0 auto 80px; /* увеличен нижний отступ */
+    gap: 3.75rem; /* 60px */
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto 5rem; /* 80px */
 }
 
 .Pricing_Section-main-block,
 .Pricing_Section-main-block2 {
     flex: 1;
-    max-width: 400px;
-    border-radius: 11px;
-    padding: 46px 32px;
+    max-width: 25rem; /* 400px */
+    border-radius: 0.6875rem; /* 11px */
+    padding: 2.875rem 2rem; /* 46px 32px */
     position: relative;
     background: var(--white);
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.05); /* 0 0 20px */
 }
 
 .Pricing_Section-main-block2 {
@@ -653,70 +658,70 @@ h1 {
 
 .best-value-badge {
     position: absolute;
-    top: 30px;
-    right: -60px;
+    top: 1.875rem; /* 30px */
+    right: -3.75rem; /* -60px */
     background: #FFD43B;
     color: var(--text-dark);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     text-transform: uppercase;
-    padding: 8px 60px;
+    padding: 0.5rem 3.75rem; /* 8px 60px */
     transform: rotate(45deg);
 }
 
 .card-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem; /* 32px */
 }
 
 .plan-name {
     display: block;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: var(--primary-dark);
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem; /* 24px */
 }
 
 .price {
     font-weight: 600;
-    font-size: 62px;
+    font-size: 3.875rem; /* 62px */
     line-height: 1;
     color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 4px;
+    gap: 0.25rem; /* 4px */
 }
 
 .currency {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
 }
 
 .price-info {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: var(--text-muted);
-    margin-top: 16px;
+    margin-top: 1rem; /* 16px */
 }
 
 .features {
     list-style: none;
-    margin-bottom: 32px;
+    margin-bottom: 2rem; /* 32px */
 }
 
 .features li {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 18px;
+    gap: 0.75rem; /* 12px */
+    font-size: 1.125rem; /* 18px */
     color: var(--text-light);
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
 }
 
 .features li img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
     flex-shrink: 0;
 }
 
@@ -726,17 +731,17 @@ h1 {
 
 .pricing-footnote {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: var(--text-light);
-    max-width: 800px;
-    margin: 0 auto 64px;
+    max-width: 50rem; /* 800px */
+    margin: 0 auto 4rem; /* 64px */
 }
 
 .features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px; /* увеличено */
-    max-width: 1200px;
+    gap: 3.75rem; /* 60px */
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
 }
 
@@ -745,108 +750,107 @@ h1 {
 }
 
 .feature img {
-    margin: 0 auto 16px;
-    width: 64px;
-    height: 64px;
+    margin: 0 auto 1rem; /* 16px */
+    width: 4rem; /* 64px */
+    height: 4rem; /* 64px */
 }
 
 .feature h3 {
     font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 1rem; /* 16px */
     color: var(--text-dark);
 }
 
 .feature p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.6;
     color: var(--text-light);
 }
 
 /* Секция CTA (исправлена кнопка) */
 .section-cta {
-    padding: 100px 0; /* увеличен вертикальный отступ */
+    padding: 6.25rem 0; /* 100px */
 }
 
 .free-eat {
     display: flex;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
     background: linear-gradient(135deg, #EB984E 0%, var(--primary) 100%);
-    border-radius: 11px;
+    border-radius: 0.6875rem; /* 11px */
     box-shadow: var(--box-shadow);
     overflow: hidden;
 }
 
 .free-eat-left {
     flex: 2;
-    padding: 48px 64px;
+    padding: 3rem 4rem; /* 48px 64px */
 }
 
 .free-eat-left h2 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 2.75rem; /* 44px */
     line-height: 1.2;
     color: #45260A;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem; /* 24px */
 }
 
 .free-eat-left p {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.8;
     color: #45260A;
-    margin-bottom: 56px; /* увеличено для отступа от формы */
+    margin-bottom: 3.5rem; /* 56px */
 }
 
 .free-eat-left-form {
     display: flex;
-    gap: 32px; /* увеличено */
+    gap: 2rem; /* 32px */
     flex-wrap: wrap;
 }
 
 .free-eat-left-form-column,
 .free-eat-left-form-column2 {
     flex: 1;
-    min-width: 250px;
+    min-width: 15.625rem; /* 250px */
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem; /* 24px */
 }
 
 .free-eat-left-form-column-name_mail,
 .free-eat-left-form-column-item2 {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
 }
 
 .free-eat-left-form-column-name_mail label,
 .free-eat-left-form-column-item2 label {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: #45260A;
 }
 
 .free-eat-left-form-column-name_mail input,
 .free-eat-left-form-column-item2 input {
-    padding: 12px 16px;
+    padding: 0.75rem 1rem; /* 12px 16px */
     border: none;
-    border-radius: 9px;
-    font-size: 16px;
+    border-radius: 0.5625rem; /* 9px */
+    font-size: 1rem; /* 16px */
     background: var(--white);
 }
 
 .free-eat-left-form-column-button {
     background: #45260A;
     color: var(--white);
-    padding: 12px 32px;
-    font-size: 20px;
+    padding: 0.75rem 2rem; /* 12px 32px */
+    font-size: 1.25rem; /* 20px */
     border: none;
-    border-radius: 9px;
+    border-radius: 0.5625rem; /* 9px */
     cursor: pointer;
     transition: background var(--transition);
-    width: 100%; 
-    margin-top: 30px;
+    width: 100%;
 }
 
 .free-eat-left-form-column-button:hover {
@@ -857,14 +861,15 @@ h1 {
     flex: 1;
     object-fit: cover;
     width: 100%;
-    max-width: 379px;
+    max-width: 23.6875rem; /* 379px */
+    aspect-ratio: 379 / 585;
 }
 
 /* Подвал */
 footer {
-    max-width: 1920px;
+    max-width: 120rem; /* 1920px */
     background: var(--white);
-    padding: 128px 32px;
+    padding: 8rem 2rem; /* 128px 32px */
     border-top: 1px solid #eee;
 }
 
@@ -872,21 +877,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 75rem; /* 1200px */
     margin: 0 auto;
-    gap: 80px; /* увеличено */
+    gap: 5rem; /* 80px */
 }
 
 .footer-col {
     flex: 1;
-    min-width: 160px;
+    min-width: 10rem; /* 160px */
 }
 
 .footer-col h4 {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     color: var(--text-light);
-    margin-bottom: 32px;
+    margin-bottom: 2rem; /* 32px */
 }
 
 .footer-col ul {
@@ -894,13 +899,13 @@ footer {
 }
 
 .footer-col li {
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
 }
 
 .footer-col a {
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     line-height: 1.5;
 }
 
@@ -909,13 +914,13 @@ footer {
 }
 
 .footer-logo {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem; /* 24px */
 }
 
 .social-icons {
     display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 1rem; /* 16px */
+    margin-bottom: 1.5rem; /* 24px */
 }
 
 .social-icons a {
@@ -923,7 +928,7 @@ footer {
 }
 
 .copyright {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: var(--text-muted);
     line-height: 1.6;
 }
@@ -944,40 +949,41 @@ address a:hover {
 }
 
 /* ========== АДАПТИВНОСТЬ ========== */
+/* Медиазапросы оставлены в px — стандартная практика */
 
 /* 1440px */
 @media (max-width: 1440px) {
     .main-container {
-        max-width: 1100px;
-        gap: 60px;
+        max-width: 68.75rem; /* 1100px */
+        gap: 3.75rem; /* 60px */
     }
     h1 {
-        font-size: 48px;
+        font-size: 3rem; /* 48px */
     }
     .hero-text {
-        font-size: 18px;
+        font-size: 1.125rem; /* 18px */
     }
     .hero-img {
-        width: 500px;
+        width: 31.25rem; /* 500px */
         height: auto;
     }
     .section-title {
-        font-size: 40px;
+        font-size: 2.5rem; /* 40px */
     }
     .how-grid {
-        max-width: 1100px;
+        max-width: 68.75rem; /* 1100px */
     }
     .how-number {
-        font-size: 72px;
+        font-size: 4.5rem; /* 72px */
     }
     .how-heading {
-        font-size: 28px;
+        font-size: 1.75rem; /* 28px */
     }
     .Testimonials_Section-cont-right {
-        width: 700px;
+        width: 43.75rem; /* 700px */
     }
     .Testimonials_Section-cont-right-row-img {
-        max-width: 220px;
+        max-width: 13.75rem; /* 220px */
     }
 }
 
@@ -990,7 +996,7 @@ address a:hover {
     }
     .hero-img {
         width: 80%;
-        max-width: 500px;
+        max-width: 31.25rem; /* 500px */
         height: auto;
         margin: 0 auto;
     }
@@ -998,28 +1004,28 @@ address a:hover {
         justify-content: center;
     }
     .section-title {
-        font-size: 36px;
+        font-size: 2.25rem; /* 36px */
     }
     .how-row {
         flex-direction: column !important;
         text-align: center;
-        gap: 32px;
+        gap: 2rem; /* 32px */
     }
     .how-image-inner {
-        max-width: 240px;
+        max-width: 15rem; /* 240px */
     }
     .how-number {
-        font-size: 64px;
+        font-size: 4rem; /* 64px */
     }
     .how-heading {
-        font-size: 26px;
+        font-size: 1.625rem; /* 26px */
     }
     .Meals_Section_main {
-        max-width: 900px;
+        max-width: 56.25rem; /* 900px */
     }
     .Meals_Section_main_item,
     .Meals_Section_main_item2 {
-        width: 300px;
+        width: 18.75rem; /* 300px */
     }
     .section-testimonials {
         grid-template-columns: 1fr;
@@ -1031,33 +1037,33 @@ address a:hover {
     }
     .testimonials-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        gap: 2rem; /* 32px */
     }
     .Testimonials_Section-cont-right {
         width: 100%;
-        padding: 16px 0;
+        padding: 1rem 0; /* 16px */
     }
     .Testimonials_Section-cont-right-row {
         flex-wrap: wrap;
         justify-content: center;
     }
     .img1 {
-        min-width: 180px;
+        min-width: 11.25rem; /* 180px */
         flex: 0 1 auto;
     }
     .Pricing_Section-main {
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 2rem; /* 32px */
     }
     .Pricing_Section-main-block,
     .Pricing_Section-main-block2 {
         width: 100%;
-        max-width: 450px;
+        max-width: 28.125rem; /* 450px */
     }
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 2.5rem; /* 40px */
     }
     .free-eat {
         flex-direction: column;
@@ -1070,62 +1076,62 @@ address a:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 32px;
+        gap: 2rem; /* 32px */
     }
     .footer-col {
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75rem; /* 300px */
     }
 }
 
 /* 768px */
 @media (max-width: 768px) {
     header {
-        padding: 0 24px;
+        padding: 0 1.5rem; /* 24px */
     }
     .header-right {
-        gap: 20px;
-        font-size: 16px;
+        gap: 1.25rem; /* 20px */
+        font-size: 1rem; /* 16px */
     }
     h1 {
-        font-size: 40px;
+        font-size: 2.5rem; /* 40px */
     }
     .hero-text {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .button-group {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 0.75rem; /* 12px */
     }
     .btn-primary, .btn-secondary {
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75rem; /* 300px */
         text-align: center;
     }
     .customers {
         flex-direction: column;
-        gap: 24px;
+        gap: 1.5rem; /* 24px */
     }
     .section-title {
-        font-size: 32px;
+        font-size: 2rem; /* 32px */
     }
     .how-number {
-        font-size: 56px;
+        font-size: 3.5rem; /* 56px */
     }
     .how-heading {
-        font-size: 24px;
+        font-size: 1.5rem; /* 24px */
     }
     .how-description {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .Meals_Section_main {
-        gap: 24px;
+        gap: 1.5rem; /* 24px */
     }
     .Meals_Section_main_item,
     .Meals_Section_main_item2 {
         width: 100%;
-        max-width: 400px;
+        max-width: 25rem; /* 400px */
     }
     .testimonials-grid {
         grid-template-columns: 1fr;
@@ -1135,17 +1141,17 @@ address a:hover {
     }
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 2rem; /* 32px */
     }
     .free-eat-left {
-        padding: 32px 24px;
+        padding: 2rem 1.5rem; /* 32px 24px */
     }
     .free-eat-left h2 {
-        font-size: 36px;
+        font-size: 2.25rem; /* 36px */
     }
     .free-eat-left-form {
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem; /* 16px */
     }
     .free-eat-left-form-column,
     .free-eat-left-form-column2 {
@@ -1158,7 +1164,7 @@ address a:hover {
         display: none; /* скрываем фото на планшетах */
     }
     footer {
-        padding: 64px 24px;
+        padding: 4rem 1.5rem; /* 64px 24px */
     }
 }
 
@@ -1167,144 +1173,144 @@ address a:hover {
     header {
         flex-direction: column;
         height: auto;
-        padding: 16px;
-        gap: 16px;
+        padding: 1rem; /* 16px */
+        gap: 1rem; /* 16px */
     }
     .header-right {
         display: none; /* скрываем навигацию на мобильных */
     }
     main {
-        padding: 32px 16px 64px;
+        padding: 2rem 1rem 4rem; /* 32px 16px 64px */
     }
     h1 {
-        font-size: 32px;
+        font-size: 2rem; /* 32px */
     }
     .hero-text {
-        font-size: 15px;
+        font-size: 0.9375rem; /* 15px */
     }
     .button-group {
-        margin-bottom: 32px;
+        margin-bottom: 2rem; /* 32px */
     }
     .stats {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
         text-align: center;
     }
     .hero-img {
         display: none; /* скрываем hero изображение на мобильных */
     }
     .section-mention {
-        padding: 32px 16px;
+        padding: 2rem 1rem; /* 32px 16px */
     }
     .mention-bottom {
-        gap: 24px;
+        gap: 1.5rem; /* 24px */
     }
     .mention-bottom img {
-        max-width: 120px;
+        max-width: 7.5rem; /* 120px */
         height: auto;
     }
     .section-title {
-        font-size: 28px;
-        margin-bottom: 32px;
+        font-size: 1.75rem; /* 28px */
+        margin-bottom: 2rem; /* 32px */
     }
     .how-grid {
-        gap: 48px;
-        padding: 0 16px;
+        gap: 3rem; /* 48px */
+        padding: 0 1rem; /* 16px */
     }
     .how-number {
-        font-size: 48px;
+        font-size: 3rem; /* 48px */
     }
     .how-heading {
-        font-size: 22px;
+        font-size: 1.375rem; /* 22px */
     }
     .how-description {
-        font-size: 15px;
+        font-size: 0.9375rem; /* 15px */
     }
     .how-image-inner {
-        max-width: 200px;
+        max-width: 12.5rem; /* 200px */
     }
     .how-image-inner::before {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem; /* 200px */
+        height: 12.5rem; /* 200px */
     }
     .how-image-inner::after {
-        width: 150px;
-        height: 150px;
+        width: 9.375rem; /* 150px */
+        height: 9.375rem; /* 150px */
     }
     .container-Meals_Section {
-        padding: 0 16px;
-        gap: 48px;
+        padding: 0 1rem; /* 16px */
+        gap: 3rem; /* 48px */
     }
     .Meals_Section-top_item2 {
-        font-size: 28px;
+        font-size: 1.75rem; /* 28px */
     }
     .Meals_Section_main_item-main {
-        padding: 24px 16px 32px;
+        padding: 1.5rem 1rem 2rem; /* 24px 16px 32px */
     }
     .Meals_Section_main_item-main-H-japan {
-        font-size: 22px;
+        font-size: 1.375rem; /* 22px */
     }
     .Meals_Section_main_item-main-spis-item {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .Meals_Section_main_item2_top {
-        font-size: 24px;
+        font-size: 1.5rem; /* 24px */
     }
     .Meals_Section_main_item2_spis li {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .section-testimonials {
-        padding: 64px 16px;
+        padding: 4rem 1rem; /* 64px 16px */
     }
     .testimonial blockquote {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .Pricing_Section-main-block,
     .Pricing_Section-main-block2 {
-        padding: 32px 20px;
+        padding: 2rem 1.25rem; /* 32px 20px */
     }
     .price {
-        font-size: 48px;
+        font-size: 3rem; /* 48px */
     }
     .currency {
-        font-size: 24px;
+        font-size: 1.5rem; /* 24px */
     }
     .features li {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .feature h3 {
-        font-size: 20px;
+        font-size: 1.25rem; /* 20px */
     }
     .feature p {
-        font-size: 16px;
+        font-size: 1rem; /* 16px */
     }
     .free-eat-left {
-        padding: 24px 16px;
+        padding: 1.5rem 1rem; /* 24px 16px */
     }
     .free-eat-left h2 {
-        font-size: 28px;
+        font-size: 1.75rem; /* 28px */
     }
     .free-eat-left p {
-        font-size: 16px;
-        margin-bottom: 40px; /* немного уменьшен для мобильных */
+        font-size: 1rem; /* 16px */
+        margin-bottom: 2.5rem; /* 40px */
     }
     .free-eat-left-form-column-name_mail input,
     .free-eat-left-form-column-item2 input {
-        font-size: 14px;
+        font-size: 0.875rem; /* 14px */
     }
     .free-eat-left-form-column-button {
-        font-size: 18px;
+        font-size: 1.125rem; /* 18px */
     }
     footer {
-        padding: 48px 16px;
+        padding: 3rem 1rem; /* 48px 16px */
     }
     .footer-col h4 {
-        font-size: 16px;
-        margin-bottom: 24px;
+        font-size: 1rem; /* 16px */
+        margin-bottom: 1.5rem; /* 24px */
     }
     .footer-col a {
-        font-size: 14px;
+        font-size: 0.875rem; /* 14px */
     }
     .copyright {
-        font-size: 12px;
+        font-size: 0.75rem; /* 12px */
     }
 }

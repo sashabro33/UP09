@@ -1052,7 +1052,7 @@ address a:hover {
         gap: 2.5rem;
     }
     .free-eat {
-        flex-direction: column;
+        flex-direction: row;
     }
     .eating-img {
         max-width: 100%;

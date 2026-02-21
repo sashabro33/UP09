@@ -939,6 +939,9 @@ address a:hover {
     color: var(--primary);
 }
 
+/* ===== МЕДИАЗАПРОСЫ ===== */
+
+/* 1440px */
 @media (max-width: 1440px) {
     .main-container {
         max-width: 68.75rem;
@@ -974,6 +977,7 @@ address a:hover {
     }
 }
 
+/* 1024px (от 1025 до 1200) и ниже до 1025 */
 @media (max-width: 1200px) {
     .main-container {
         flex-direction: column;
@@ -1070,6 +1074,88 @@ address a:hover {
     }
 }
 
+/* Специальные правки для разрешения ~1024px (чтобы экраны 1024-1200 выглядели как надо) */
+@media (max-width: 1100px) {
+    /* Корректировка шрифтов, чтобы все влезало */
+    .section-title {
+        font-size: 2rem;
+    }
+    .how-heading {
+        font-size: 1.5rem;
+    }
+    .how-description {
+        font-size: 1rem;
+    }
+    .how-number {
+        font-size: 3.5rem;
+    }
+    .how-image-inner {
+        max-width: 13rem;
+    }
+    .how-image-inner::before {
+        width: 12rem;
+        height: 12rem;
+    }
+    .how-image-inner::after {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    /* Секция отзывов: один столбец, галерея справа */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .Testimonials_Section-cont-right {
+        width: 100%;
+    }
+    .Testimonials_Section-cont-right-row-img {
+        max-width: 12rem;
+    }
+
+    /* Секция "Прием пищи": специальная сетка для карточек и списка */
+    .Meals_Section_main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* три равные колонки */
+        gap: 2rem;
+        max-width: 100%;
+    }
+    .Meals_Section_main_item {
+        width: auto; /* убираем фиксированную ширину */
+        margin: 0;
+    }
+    .Meals_Section_main_item2 {
+        width: auto;
+        grid-column: 3; /* список в третьей колонке */
+        grid-row: 1 / span 2; /* занимает две строки */
+    }
+    /* Распределяем карточки по ячейкам */
+    .Meals_Section_main_item:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .Meals_Section_main_item:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .Meals_Section_main_item:nth-child(3) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    /* Вторая колонка во второй строке остаётся пустой, что нормально */
+
+    /* Секция цен: баннеры рядом, фишки в 4 колонки */
+    .Pricing_Section-main {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* 768px */
 @media (max-width: 768px) {
     header {
         padding: 0 1.5rem;
@@ -1111,6 +1197,8 @@ address a:hover {
         font-size: 1rem;
     }
     .Meals_Section_main {
+        display: flex; /* возвращаем flex для 768 */
+        flex-wrap: wrap;
         gap: 1.5rem;
     }
     .Meals_Section_main_item,
@@ -1153,6 +1241,7 @@ address a:hover {
     }
 }
 
+/* 390px */
 @media (max-width: 390px) {
     header {
         flex-direction: column;

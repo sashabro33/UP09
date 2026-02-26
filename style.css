@@ -94,7 +94,7 @@ body {
 .btn-secondary {
     display: inline-block;
     background: var(--white);
-    color: var(--white);
+    color: var(--text-light);
     font-weight: 600;
     font-size: 1.25rem;
     padding: 0.875rem 2rem;

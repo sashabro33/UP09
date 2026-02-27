@@ -1061,7 +1061,7 @@ address a:hover {
         height: auto;
     }
     .footer-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         gap: 2rem;
@@ -1092,6 +1092,7 @@ address a:hover {
         gap: 0.75rem;
     }
     .btn-primary, .btn-secondary {
+        margin-left: 2rem;
         width: 100%;
         max-width: 18.75rem;
         text-align: center;
@@ -1151,6 +1152,7 @@ address a:hover {
         display: none;
     }
     footer {
+        
         padding: 4rem 1.5rem;
     }
 }

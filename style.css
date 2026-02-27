@@ -317,8 +317,8 @@ h1 {
 .how-image-inner::before {
     content: '';
     position: absolute;
-    width: 15.625rem;
-    height: 15.625rem;
+    width: 18.625rem;
+    height: 18.625rem;
     border-radius: 50%;
     background-color: var(--primary-light);
     z-index: 0;
@@ -330,8 +330,8 @@ h1 {
 .how-image-inner::after {
     content: '';
     position: absolute;
-    width: 11.875rem;
-    height: 11.875rem;
+    width: 13.875rem;
+    height: 13.875rem;
     border-radius: 50%;
     background-color: #FAE5D3;
     z-index: 1;
